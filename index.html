@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Interaktywna mapa</title>
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- MAPA -->
+  <div id="map"></div>
+
+  <!-- LEWY GÓRNY PANEL -->
+  <div class="top-left">
+
+    <div class="menu-group castles">
+      <button class="main-btn dark">Szlak zamków</button>
+      <div class="submenu">
+  
+  <button data-place="chojnik">Chojnik</button>
+  <button data-place="bolkow">Bolków</button>
+  <button data-place="czersk">Czersk</button>
+  <button data-place="oporow">Oporów</button>
+  <button data-place="debno">Dębno</button>
+  <button data-place="kornik">Kórnik</button>
+  <button data-place="szydlow">Szydłów</button>
+  <button data-place="lublin">Lublin</button>
+      </div>
+    </div>
+
+    <div class="menu-group cities">
+      <button class="main-btn gold">Szlak miast</button>
+     <div class="submenu">
+  <button data-place="krakow">Kraków</button>
+  <button data-place="wroclaw">Wrocław</button>
+  <button data-place="gdansk">Gdańsk</button>
+  <button data-place="stargard">Stargard</button>
+  <button data-place="poznan">Poznań</button>
+  <button data-place="torun">Toruń</button>
+</div>
+    </div>
+        </div>
+
+ 
+
+  <!-- DOLNE PRZYCISKI -->
+  <div class="bottom-menu">
+    <button>Quiz o zamkach</button>
+    <button>Quiz o kamienicach</button>
+    <button>Bibliografia</button>
+  </div>
+
+  <div class="popup-overlay" id="bibliografiaPopup">
+  <div class="popup-content">
+
+    <button class="close-btn" id="closePopup">✕</button>
+
+    <h2>Bibliografia</h2>
+
+    <p>
+      Skibiński S., Zalewska-Lorkiewicz K., <i>Sztuka Polska</i>, t. II, Warszawa 2010.<br><br>
+      <i>Architektura gotycka w Polsce</i>, red. T. Mroczko, M. Arszyński, Warszawa 1995.<br><br>
+      Guerquin B., <i>Zamki w Polsce</i>, Warszawa 1984.<br><br>
+      Kajzer L., Kołodziejski S., Salm J., Gaworski M., <i>Leksykon zamków w Polsce</i>, Warszawa 2022.<br><br>
+      Komorowski W., <i>Kamienice i pałace rynku krakowskiego w średniowieczu</i>, „Rocznik krakowski”, tom 68, 2002.<br><br>
+      Rollenhagen O., <i>Analiza i opis gdańskich kamienic mieszczańskich</i>, Marburg–Gdańsk 2008.
+    </p>
+
+  </div>
+</div>
+<div class="popup-overlay" id="quizPopup">
+  <div class="popup-content quiz">
+
+    <button class="close-btn" id="closeQuiz">✕</button>
+
+    <h2>Quiz o zamkach</h2>
+
+    <form id="quizForm">
+
+      <div class="question">
+        <p>1. Gdzie znajduje się zamek Chojnik?</p>
+        <label><input type="radio" name="q1" value="0"> W Krakowie</label><br>
+        <label><input type="radio" name="q1" value="1"> W Karkonoszach</label><br>
+        <label><input type="radio" name="q1" value="0"> W Gdańsku</label>
+      </div>
+
+      <div class="question">
+        <p>2. Który zamek leży w województwie lubelskim?</p>
+        <label><input type="radio" name="q2" value="0"> Bolków</label><br>
+        <label><input type="radio" name="q2" value="1"> Lublin</label><br>
+        <label><input type="radio" name="q2" value="0"> Oporów</label>
+      </div>
+
+      <div class="question">
+        <p>3. Który zamek znajduje się w Wielkopolsce?</p>
+        <label><input type="radio" name="q3" value="1"> Kórnik</label><br>
+        <label><input type="radio" name="q3" value="0"> Czersk</label><br>
+        <label><input type="radio" name="q3" value="0"> Dębno</label>
+      </div>
+
+      <button type="button" id="checkQuiz" class="quiz-btn">Sprawdź</button>
+
+      <p id="quizResult"></p>
+
+    </form>
+
+  </div>
+</div>
+<div class="popup-overlay" id="quizKamienicePopup">
+  <div class="popup-content quiz">
+
+    <button class="close-btn" id="closeQuizKamienice">✕</button>
+
+    <h2>Quiz o kamienicach</h2>
+
+    <form id="quizKamieniceForm">
+
+      <div class="question">
+        <p>1. W którym mieście znajdują się słynne kamienice przy Rynku?</p>
+        <label><input type="radio" name="k1" value="1"> Kraków</label><br>
+        <label><input type="radio" name="k1" value="0"> Lublin</label><br>
+        <label><input type="radio" name="k1" value="0"> Stargard</label>
+      </div>
+
+      <div class="question">
+        <p>2. Gdańskie kamienice są charakterystyczne dla stylu:</p>
+        <label><input type="radio" name="k2" value="0"> Gotyku</label><br>
+        <label><input type="radio" name="k2" value="1"> Manieryzmu i renesansu</label><br>
+        <label><input type="radio" name="k2" value="0"> Baroku francuskiego</label>
+      </div>
+
+      <div class="question">
+        <p>3. Kamienice mieszczańskie były głównie:</p>
+        <label><input type="radio" name="k3" value="1"> Domami i miejscem pracy</label><br>
+        <label><input type="radio" name="k3" value="0"> Zamkami obronnymi</label><br>
+        <label><input type="radio" name="k3" value="0"> Świątyniami</label>
+      </div>
+
+      <button type="button" id="checkQuizKamienice" class="quiz-btn">Sprawdź</button>
+
+      <p id="quizKamieniceResult"></p>
+
+    </form>
+
+  </div>
+</div>
+<!-- PRAWY PANEL -->
+<div class="info-panel" id="infoPanel">
+  <h2 id="placeTitle">Tytuł</h2>
+  <p id="placeDescription">tutaj opis</p>
+</div>
+
+<!-- LEWE PANELE -->
+<div class="left-panels">
+
+  <div class="gallery-panel" id="photoPanel">
+    <img id="photoImage" src="" alt="">
+    <div class="gallery-controls">
+      <button id="prevPhoto">←</button>
+      <button id="nextPhoto">→</button>
+    </div>
+  </div>
+
+  <div class="gallery-panel" id="planPanel">
+    <img id="planImage" src="" alt="">
+    <div class="gallery-controls">
+      <button id="prevPlan">←</button>
+      <button id="nextPlan">→</button>
+    </div>
+  </div>
+
+</div>
+<div class="lightbox" id="lightbox">
+  <img id="lightboxImage" src="">
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
