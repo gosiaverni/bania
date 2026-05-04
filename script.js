@@ -22,54 +22,42 @@ const brownIcon = L.divIcon({
   iconSize: [30, 30],
   iconAnchor: [15, 30]
 });
-// PUNKTY
-L.marker([50.062226758956925, 19.939073455181603], { icon: goldIcon }).addTo(map); // Kraków Margrabska
-L.marker([50.060544909061356, 19.937228749899237], { icon: goldIcon }).addTo(map); // Kraków Hetmańska
-L.marker([54.34896755861956, 18.65240926886976], { icon: goldIcon }).addTo(map); // Gdańsk Długa
-L.marker([54.349357985446936, 18.64931744003403], { icon: goldIcon }).addTo(map); // Gdańsk, Dom Uphagena
-L.marker([51.1101487584281, 17.030294497556596], { icon: goldIcon }).addTo(map); // Wrocław, Pod Siedmioma
-L.marker([51.110476322253064, 17.03359632639239], { icon: goldIcon }).addTo(map); // Wrocław, Pod Złotym
-L.marker([52.40673387840802, 16.933304726451137], { icon: goldIcon }).addTo(map); // Poznań
-L.marker([53.00934235986165, 18.603830382299893], { icon: goldIcon }).addTo(map); // Toruń
-L.marker([53.337441297095054, 15.046610826494046], { icon: goldIcon }).addTo(map); // Stargard
-L.marker([50.921732918662684, 16.097847239876508], { icon: brownIcon }).addTo(map); // Bolków
-L.marker([50.83386531148799, 15.644295241723196], { icon: brownIcon }).addTo(map); // Chojnik
-L.marker([51.95818840294713, 21.234058268759103], { icon: brownIcon }).addTo(map); // Czersk
-L.marker([52.26242660585076, 19.562075709250788], { icon: brownIcon }).addTo(map); // Oporów
-L.marker([49.964190267016676, 20.71578556866991], { icon: brownIcon }).addTo(map); // Dębno
-L.marker([52.24391807199303, 17.090812824593108], { icon: brownIcon }).addTo(map); // Kórnik
-L.marker([50.59048406032662, 20.999817911026053], { icon: brownIcon }).addTo(map); // Szydłów
-L.marker([51.25055908710818, 22.571769168727084], { icon: brownIcon }).addTo(map); // Lublin
 
-const locations = {
-  // miasta
-  krakow: [50.0622, 19.9390],
-  wroclaw: [51.1101, 17.0302],
-  gdansk: [54.3489, 18.6524],
-  stargard: [53.3374, 15.0466],
-  poznan: [52.4067, 16.9333],
-  torun: [53.0093, 18.6038],
 
-  // zamki
-  chojnik: [50.8338, 15.6442],
-  bolkow: [50.9217, 16.0978],
-  czersk: [51.9581, 21.2340],
-  oporow: [52.2624, 19.5620],
-  debno: [49.9641, 20.7157],
-  kornik: [52.2439, 17.0908],
-  szydlow: [50.5904, 20.9998],
-  lublin: [51.2505, 22.5717]
-};
+const introBtnCastles = document.getElementById('introBtnCastles');
+const introBtnCities = document.getElementById('introBtnCities');
+
+const introPopup = document.getElementById('introPopup');
+const closeIntro = document.getElementById('closeIntro');
+
+[introBtnCastles, introBtnCities].forEach(btn => {
+  btn.addEventListener('click', () => {
+    introPopup.classList.add('active');
+  });
+});
+
+// zamykanie
+closeIntro.addEventListener('click', () => {
+  introPopup.classList.remove('active');
+});
+
+// klik poza popupem
+introPopup.addEventListener('click', (e) => {
+  if (e.target === introPopup) {
+    introPopup.classList.remove('active');
+  }
+});
 
 document.querySelectorAll('.submenu button').forEach(button => {
   button.addEventListener('click', () => {
     const place = button.dataset.place;
-    const coords = locations[place];
 
-    if (coords) {
-      map.flyTo(coords, 14, {
-        duration: 1.5
-      });
+    if (!place) return; // 🔥 zabezpieczenie
+
+    const placeData = placesData[place];
+
+    if (placeData && placeData.coords) {
+      map.flyTo(placeData.coords, 14, { duration: 1.5 });
     }
   });
 });
@@ -173,23 +161,154 @@ closeQuizKamienice.addEventListener('click', () => {
 
 const placesData = {
   chojnik: {
+    coords: [50.8338, 15.6442],
+    icon: brownIcon,
     title: "Zamek Chojnik",
     description: "tutaj opis",
     photos: ["assets/Chojnik-25.jpg", "assets/Chojnik-z-góry-11.jpg"],
     plans: ["assets/Chojnik-plan-03.jpg", "assets/Chojnik-rekonstrukcja-01.jpg"]
   },
-  krakow: {
-    title: "Kraków",
+  bolkow: {
+    coords: [50.9217, 16.0978],
+    icon: brownIcon,
+    title: "Zamek w Bolkowie",
+    description: "tutaj opis",
+    photos: ["assets/Chojnik-25.jpg", "assets/Chojnik-z-góry-11.jpg"],
+    plans: ["assets/Chojnik-plan-03.jpg", "assets/Chojnik-rekonstrukcja-01.jpg"]
+  },
+  czersk: {
+    coords: [51.9581, 21.2340],
+    icon: brownIcon,
+    title: "Zamek w Czersku",
+    description: "tutaj opis",
+    photos: ["assets/Chojnik-25.jpg", "assets/Chojnik-z-góry-11.jpg"],
+    plans: ["assets/Chojnik-plan-03.jpg", "assets/Chojnik-rekonstrukcja-01.jpg"]
+  },
+  oporow: {
+    coords: [52.2624, 19.5620],
+    icon: brownIcon,
+    title: "Zamek w Oporowie",
+    description: "tutaj opis",
+    photos: ["assets/Chojnik-25.jpg", "assets/Chojnik-z-góry-11.jpg"],
+    plans: ["assets/Chojnik-plan-03.jpg", "assets/Chojnik-rekonstrukcja-01.jpg"]
+  },
+  debno: {
+    coords: [49.9641, 20.7157],
+    icon: brownIcon,
+    title: "Zamek w Dębnie",
+    description: "tutaj opis",
+    photos: ["assets/Chojnik-25.jpg", "assets/Chojnik-z-góry-11.jpg"],
+    plans: ["assets/Chojnik-plan-03.jpg", "assets/Chojnik-rekonstrukcja-01.jpg"]
+  },
+   kornik: {
+    coords: [52.2439, 17.0908],
+    icon: brownIcon,
+    title: "Zamek w Kórniku",
+    description: "tutaj opis",
+    photos: ["assets/Chojnik-25.jpg", "assets/Chojnik-z-góry-11.jpg"],
+    plans: ["assets/Chojnik-plan-03.jpg", "assets/Chojnik-rekonstrukcja-01.jpg"]
+  },
+   szydlow: {
+    coords: [50.5904, 20.9998],
+    icon: brownIcon,
+    title: "Zamek w Szydłowie",
+    description: "tutaj opis",
+    photos: ["assets/Chojnik-25.jpg", "assets/Chojnik-z-góry-11.jpg"],
+    plans: ["assets/Chojnik-plan-03.jpg", "assets/Chojnik-rekonstrukcja-01.jpg"]
+  },
+   lublin: {
+    coords: [51.2505, 22.5717],
+    icon: brownIcon,
+    title: "Zamek w Lublinie",
+    description: "tutaj opis",
+    photos: ["assets/Chojnik-25.jpg", "assets/Chojnik-z-góry-11.jpg"],
+    plans: ["assets/Chojnik-plan-03.jpg", "assets/Chojnik-rekonstrukcja-01.jpg"]
+  },
+  krakow_hetmanska: {
+    coords: [50.06063182353387, 19.937206111002542],
+    icon: goldIcon,
+    title: "Kraków - Kamienica Hetmańska",
     description: "tutaj opis",
     photos: ["assets/test1.jpg"],
     plans: ["assets/plan1.jpg"]
-  }
+  },
+  krakow_margrabska: {
+    coords: [50.062350659159826, 19.938976882506278],
+    icon: goldIcon,
+    title: "Kraków - Kamienica Margrabska",
+    description: "tutaj opis",
+    photos: ["assets/test1.jpg"],
+    plans: ["assets/plan1.jpg"]
+  },
+  wroclaw_podpsem: {
+    coords: [51.11058409469943, 17.033564139885005],
+    icon: goldIcon,
+    title: "Wrocław - Kamienica Pod Złotym Psem",
+    description: "tutaj opis",
+    photos: ["assets/test1.jpg"],
+    plans: ["assets/plan1.jpg"]
+  },
+  wroclaw_podelektorami: {
+    coords: [51.110243060000826, 17.030305226392382],
+    icon: goldIcon,
+    title: "Wrocław - Kamienica Pod Siedmioma Elektorami",
+    description: "tutaj opis",
+    photos: ["assets/test1.jpg"],
+    plans: ["assets/plan1.jpg"]
+  },
+  gdansk_dom: {
+    coords: [54.3494517834884, 18.649338897705622],
+    icon: goldIcon,
+    title: "Gdańsk - Dom Uphagena",
+    description: "tutaj opis",
+    photos: ["assets/test1.jpg"],
+    plans: ["assets/plan1.jpg"]
+  },
+  gdansk_kamienica: {
+    coords: [54.349017584743585, 18.652398540033968],
+    icon: goldIcon,
+    title: "Gdańsk - kamienica przy ul. Długiej 47",
+    description: "tutaj opis",
+    photos: ["assets/test1.jpg"],
+    plans: ["assets/plan1.jpg"]
+  },
+   stargard: {
+    coords: [53.3374, 15.0466],
+    icon: goldIcon,
+    title: "Stargard",
+    description: "tutaj opis",
+    photos: ["assets/test1.jpg"],
+    plans: ["assets/plan1.jpg"]
+  },
+   poznan: {
+    coords: [52.4067, 16.9333],
+    icon: goldIcon,
+    title: "Poznań",
+    description: "tutaj opis",
+    photos: ["assets/test1.jpg"],
+    plans: ["assets/plan1.jpg"]
+  },
+   torun: {
+    coords: [53.0093, 18.6038],
+    icon: goldIcon,
+    title: "Toruń",
+    description: "tutaj opis",
+    photos: ["assets/test1.jpg"],
+    plans: ["assets/plan1.jpg"]
+  },
+  
 };
 
-const marker = L.marker([50.8338, 15.6442], { icon: brownIcon }).addTo(map);
+Object.keys(placesData).forEach(placeKey => {
+  const place = placesData[placeKey];
 
-marker.on('click', () => {
-  openPanels('chojnik');
+  const marker = L.marker(place.coords, {
+    icon: place.icon
+  }).addTo(map);
+
+  marker.on('click', () => {
+    openPanels(placeKey);
+  });
 });
 
 let currentPhoto = 0;
