@@ -164,7 +164,14 @@ const placesData = {
     coords: [50.8338, 15.6442],
     icon: brownIcon,
     title: "Zamek Chojnik",
-    description: "tutaj opis",
+    description: `
+    <p>Zamek położony w Karkonoszach.</p>
+    <ul>
+      <li>budowa: XIV wiek</li>
+      <li>funkcja: obronna</li>
+      <li>lokalizacja: góra Chojnik</li>
+    </ul>
+  `,
     photos: ["assets/Chojnik-25.jpg", "assets/Chojnik-z-góry-11.jpg"],
     plans: ["assets/Chojnik-plan-03.jpg", "assets/Chojnik-rekonstrukcja-01.jpg"]
   },
@@ -277,8 +284,8 @@ const placesData = {
     icon: goldIcon,
     title: "Stargard",
     description: "tutaj opis",
-    photos: ["assets/test1.jpg"],
-    plans: ["assets/plan1.jpg"]
+    photos: ["assets/stargard - zdjęcie (2).jpg", "assets/stargard - zdjęcie (1).jpg", "assets/stargard - zdjęcie (3).jpg"],
+    plans: ["assets/stargard - plan (1).jpg"]
   },
    poznan: {
     coords: [52.4067, 16.9333],
@@ -319,7 +326,7 @@ function openPanels(placeKey) {
 
   // tekst
   document.getElementById('placeTitle').textContent = data.title;
-  document.getElementById('placeDescription').textContent = data.description;
+  document.getElementById('placeDescription').innerHTML = data.description;
 
   // zdjęcia
   currentPhoto = 0;

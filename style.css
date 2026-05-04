@@ -434,3 +434,9 @@ body {
   box-shadow: 0 10px 40px rgba(0,0,0,0.5);
   cursor: zoom-out;
 }
+
+.popup-content ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 20px; /* 🔥 lepsze niż padding */
+}
