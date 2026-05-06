@@ -227,9 +227,18 @@ const placesData = {
     coords: [51.2505, 22.5717],
     icon: brownIcon,
     title: "Zamek w Lublinie",
-    description: "tutaj opis",
-    photos: ["assets/Chojnik-25.jpg", "assets/Chojnik-z-góry-11.jpg"],
-    plans: ["assets/Chojnik-plan-03.jpg", "assets/Chojnik-rekonstrukcja-01.jpg"]
+    description: `
+    <p>Zamek królewski w centrum miasta.</p>
+    <ul>
+      <li>zbudowany w XII wieku</li>
+      <li>rezydencja królewska w XVI wieku</li>
+      <li>miejsce podpisania Unii Lubelskiej</li>
+      <li>średniowieczny donżon i kaplica</li>
+      <li>obecnie siedziba Muzeum Narodowego w Lublinie</li>
+    </ul>
+  `,
+    photos: ["assets/zamek lublin.jpg", "assets/lublindonzonikaplica.jpg", "assets/lublin podworze.jpg", "assets/lublin kaplica.jpg", "assets/Trinity_Chapel_in_Lublin_2014-08-09-211.jpg"],
+    plans: ["assets/Lublin-plan-01.jpg", "assets/Lublin-rekonstrukcja-02.jpg", "assets/Lublin-kaplica-św-Trójcy-plan-02.jpg", "assets/Lublin-rekonstrukcja-01.jpg"]
   },
   krakow_hetmanska: {
     coords: [50.06063182353387, 19.937206111002542],
@@ -267,9 +276,16 @@ const placesData = {
     coords: [54.3494517834884, 18.649338897705622],
     icon: goldIcon,
     title: "Gdańsk - Dom Uphagena",
-    description: "tutaj opis",
-    photos: ["assets/test1.jpg"],
-    plans: ["assets/plan1.jpg"]
+    description: `
+    <p>Kamienica udostępniona do zwiedzania.</p>
+    <ul>
+      <li>zbudowana w XIV, lecz przebudowana w XVI wieku</li>
+      <li>nazwa pochodzi od wpływowego rodu Uphagenów</li>
+      <li>obecnie oddział Muzeum Gdańska</li>
+    </ul>
+  `,
+    photos: ["assets/Kamienica_Gdańsk,_ul._Długa_12_by_AW.jpg", "assets/uphagen - wnętrze.jpg"],
+    plans: ["assets/Uphagen-House-Gdansk-12-Dluga-Street-ground-floor-plans-mezzanine-first-and-second.png"]
   },
   gdansk_kamienica: {
     coords: [54.349017584743585, 18.652398540033968],
@@ -283,7 +299,14 @@ const placesData = {
     coords: [53.3374, 15.0466],
     icon: goldIcon,
     title: "Stargard",
-    description: "tutaj opis",
+    description: `
+    <p>Perła wśród gotyckich kamienic w Polsce.</p>
+    <ul>
+      <li>zbudowana w I połowie XV wieku</li>
+      <li>wiązana z warsztatem Hinricha Brunsberga</li>
+      <li>część Europejskiego Szlaku Gotyku Ceglanego</li>
+    </ul>
+  `,
     photos: ["assets/stargard - zdjęcie (2).jpg", "assets/stargard - zdjęcie (1).jpg", "assets/stargard - zdjęcie (3).jpg"],
     plans: ["assets/stargard - plan (1).jpg"]
   },
