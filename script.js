@@ -261,7 +261,7 @@ const placesData = {
     icon: goldIcon,
     title: "Wrocław - Kamienica Pod Złotym Psem",
     description: "tutaj opis",
-    photos: ["assets/test1.jpg"],
+    photos: ["assets/2016_Wrocław,_Rynek_41_01.jpg", "assets/Kamienica_39-40.jpg", "assets/2016_Wrocław,_Rynek_41_05.jpg"],
     plans: ["assets/plan1.jpg"]
   },
   wroclaw_podelektorami: {
