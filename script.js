@@ -317,7 +317,7 @@ const placesData = {
     <p>Perła wśród gotyckich kamienic w Polsce.</p>
     <ul>
       <li>zbudowana w I połowie XV wieku</li>
-      <li>wiązana z warsztatem Hinricha Brunsberga</li>
+      <li>przykład blendy stargardzkiej</li>
       <li>część Europejskiego Szlaku Gotyku Ceglanego</li>
     </ul>
   `,
