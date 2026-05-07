@@ -260,7 +260,14 @@ const placesData = {
     coords: [51.11058409469943, 17.033564139885005],
     icon: goldIcon,
     title: "Wrocław - Kamienica Pod Złotym Psem",
-    description: "tutaj opis",
+    description: `
+    <p>Jedna z najstarszych kamienic Wrocławia.</p>
+    <ul>
+      <li>malowidła przedstawiające 7 elektorów oraz cesarza Leopolda I</li>
+      <li>własność rodu patrycjuszy von Uthmannów</li>
+      <li>zachowane gotyckie elementy</li>
+    </ul>
+  `,
     photos: ["assets/2016_Wrocław,_Rynek_41_01.jpg", "assets/Kamienica_39-40.jpg", "assets/2016_Wrocław,_Rynek_41_05.jpg"],
     plans: ["assets/plan1.jpg"]
   },
@@ -268,9 +275,16 @@ const placesData = {
     coords: [51.110243060000826, 17.030305226392382],
     icon: goldIcon,
     title: "Wrocław - Kamienica Pod Siedmioma Elektorami",
-    description: "tutaj opis",
-    photos: ["assets/test1.jpg"],
-    plans: ["assets/plan1.jpg"]
+    description: `
+    <p>Jedna z najstarszych kamienic Wrocławia.</p>
+    <ul>
+      <li>malowidła przedstawiające 7 elektorów oraz cesarza Leopolda I</li>
+      <li>własność rodu patrycjuszy von Uthmannów</li>
+      <li>zachowane gotyckie elementy</li>
+    </ul>
+  `,
+    photos: ["assets/Kamienica_Pod_Siedmioma_Elektorami_Wroclaw_4735691.jpg", "assets/Kamienica_Pod_Siedmioma_Elektorami_Wroclaw_5291481.jpg","assets/Portal_kamienicy_Pod_Siedmioma_Elektorami_Wrocław.jpg", "assets/House_of_the_Seven_Electors.jpg"],
+    plans: ["assets/Kamienica_Pod_Siedmioma_Elektorami_Wroclaw_167087.jpg", "assets/Kamienica_Pod_Siedmioma_Elektorami_Wroclaw_4345968.jpg", "assets/Zachodnia_strona_Rynku_Siedmiu_Elektorow_Targ_Welny_pl_Rynek_Wroclaw_8240.jpg", "assets/Kamienica_Pod_Siedmioma_Elektorami_Wroclaw_406123.jpg", "assets/Kamienica_Pod_Siedmioma_Elektorami_Wroclaw_4732249.jpg"]
   },
   gdansk_dom: {
     coords: [54.3494517834884, 18.649338897705622],
