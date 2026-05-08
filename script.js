@@ -292,15 +292,15 @@ const placesData = {
     icon: goldIcon,
     title: "Wrocław - Kamienica Pod Złotym Psem",
     description: `
-    <p>Jedna z najstarszych kamienic Wrocławia.</p>
+    <p>XIII-wieczna kamienica na wrocławskim rynku.</p>
     <ul>
-      <li>malowidła przedstawiające 7 elektorów oraz cesarza Leopolda I</li>
-      <li>własność rodu patrycjuszy von Uthmannów</li>
-      <li>zachowane gotyckie elementy</li>
+      <li>charakterystyczny wykusz</li>
+      <li>bogate zdobienia budynku</li>
+      <li>od XVIII wieku zdobiona figurką złotego psa</li>
     </ul>
   `,
-    photos: ["assets/2016_Wrocław,_Rynek_41_01.jpg", "assets/Kamienica_39-40.jpg", "assets/2016_Wrocław,_Rynek_41_05.jpg"],
-    plans: ["assets/plan1.jpg"]
+    photos: ["assets/Kamiennica-Pod-Zlotym-Psem-Karmello-Rynek-41-05.09.2023-8.jpg", "assets/podzlotyymbok.jpg", "assets/podzlotympies.jpg", "assets/Kamiennica-Pod-Zlotym-Psem-Karmello-Rynek-41-05.09.2023-4.jpg", "assets/Kamiennica-Pod-Zlotym-Psem-Karmello-Rynek-41-05.09.2023-5.jpg"],
+    plans: ["assets/podzlotymplan.jpg", "assets/polnocna-strona-rynku-targ-lakoci-1900-1910-fotopolska-eu.jpg", "assets/kamienica-pod-zlotym-psem-1939-1944-fotopolska-eu.jpg"]
   },
   wroclaw_podelektorami: {
     coords: [51.110243060000826, 17.030305226392382],
