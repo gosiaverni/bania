@@ -187,9 +187,17 @@ const placesData = {
     coords: [51.9581, 21.2340],
     icon: brownIcon,
     title: "Zamek w Czersku",
-    description: "tutaj opis",
-    photos: ["assets/Chojnik-25.jpg", "assets/Chojnik-z-góry-11.jpg"],
-    plans: ["assets/Chojnik-plan-03.jpg", "assets/Chojnik-rekonstrukcja-01.jpg"]
+    description: `
+    <p>Siedziba książąt mazowieckich.</p>
+    <ul>
+    <li>murowany obiekt zbudowany w XIV wieku</li>
+      <li>usytuowany w zakolu Wisły oraz jej rozgałęzień</li>
+      <li>zamek zaniedbany, a następnie zniszczony przez Szwedów w XVII wieku</li>
+      
+    </ul>
+  `,
+    photos: ["assets/czerskcaly.jpg", "assets/czerskwiezabramna.jpg", "assets/czerskdziedz.jpg", "assets/czerskplnwsch.jpg", "assets/czerskwiezapldwsch.jpg","assets/czerskwiezaplnzach.jpg", "assets/czerskplnwsch.jpg"],
+    plans: ["assets/czerskplan.jpg", "assets/czerskrekons15.jpg", "assets/czerskplanwiezy.jpg", "assets/czerskplanywiez.jpg", "assets/czerskprzekrojwiezy.jpg", "assets/czerskprzekrojwiez.jpg", "assets/czerskdrzew.jpg"]
   },
   oporow: {
     coords: [52.2624, 19.5620],
