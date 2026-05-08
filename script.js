@@ -211,9 +211,17 @@ const placesData = {
     coords: [52.2439, 17.0908],
     icon: brownIcon,
     title: "Zamek w Kórniku",
-    description: "tutaj opis",
-    photos: ["assets/Chojnik-25.jpg", "assets/Chojnik-z-góry-11.jpg"],
-    plans: ["assets/Chojnik-plan-03.jpg", "assets/Chojnik-rekonstrukcja-01.jpg"]
+    description: `
+    <p>Jedno z najstarszych muzeów w Polsce.</p>
+    <ul>
+    <li>zbudowany w drugiej połowie XIV wieku.</li>
+      <li>usytuowany na szlaku z Poznania do Wrocławia</li>
+      <li>charakterystyczny ryzalit z ostrołuczną wnęką obejmującą dwie kondygnacje</li>
+      
+    </ul>
+  `,
+    photos: ["assets/kornikfront.jpg", "assets/kornikbok.jpg", "assets/korniktyl.jpg", "assets/kornikwieza.jpg", "assets/kornikdetale.jpg", "assets/kornikwnetrze.jpg", "assets/kornikkolumny.jpg"],
+    plans: ["assets/kornikplan.jpg", "assets/kornikrekonstrukcja.jpg", "assets/kornik2rekonstrukcja.jpg", "assets/kornikfazybudowy.jpg", "assets/kornikdrzeworyt.jpg"]
   },
    szydlow: {
     coords: [50.5904, 20.9998],
@@ -259,9 +267,17 @@ const placesData = {
     coords: [50.062350659159826, 19.938976882506278],
     icon: goldIcon,
     title: "Kraków - Kamienica Margrabska",
-    description: "tutaj opis",
-    photos: ["assets/test1.jpg"],
-    plans: ["assets/plan1.jpg"]
+    description: `
+    <p>Miejsce pobytu historycznych postaci.</p>
+    <ul>
+    <li>murowany obiekt powstał w drugiej połowie XIII wieku</li>
+      <li>dawna mennica, a następnie hotel</li>
+      <li>przebywał w niej Tadeusz Kościuszko oraz Stanisław Moniuszko</li>
+      
+    </ul>
+  `,
+    photos: ["assets/5aa67f99087ad.jpg", "assets/margrabskabok.jpg", "assets/margrabskawejscie.jpg", "assets/margrabskaportal.jpg", "assets/margrabskadetal.jpg"],
+    plans: ["assets/margrabska plan.jpg"]
   },
   wroclaw_podpsem: {
     coords: [51.11058409469943, 17.033564139885005],
