@@ -244,9 +244,16 @@ const placesData = {
     coords: [50.06063182353387, 19.937206111002542],
     icon: goldIcon,
     title: "Kraków - Kamienica Hetmańska",
-    description: "tutaj opis",
-    photos: ["assets/test1.jpg"],
-    plans: ["assets/plan1.jpg"]
+    description:  `
+    <p>Możliwa rezydencja Kazimierza Wielkiego.</p>
+    <ul>
+      <li>zbudowana pod koniec XIII wieku</li>
+      <li>własność wielu wpływowych rodów</li>
+      <li>sala gotycka na parterze kamienicy</li>
+    </ul>
+  `,
+    photos: ["assets/hetmanskafront.jpg", "assets/hetmanskaportal.jpg", "assets/hetmanskadetal.jpg"],
+    plans: ["assets/PL.1.9.ZIPOZ.NID_N_12_EN.521649-1.jpg"]
   },
   krakow_margrabska: {
     coords: [50.062350659159826, 19.938976882506278],
