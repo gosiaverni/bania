@@ -78,7 +78,7 @@ closeBtn.addEventListener('click', () => {
 // klik poza popupem = zamknij
 popup.addEventListener('click', (e) => {
   if (e.target === popup) {
-    popup.style.display = 'none';
+    popup.classList.remove('active');
   }
 });
 
