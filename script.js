@@ -359,9 +359,17 @@ const placesData = {
     coords: [52.4067, 16.9333],
     icon: goldIcon,
     title: "Poznań",
-    description: "tutaj opis",
-    photos: ["assets/test1.jpg"],
-    plans: ["assets/plan1.jpg"]
+    description: `
+    <p>Kamienica wybudowana w miejscu osady wczesnośredniowiecznej.</p>
+    <ul>
+      <li>wybudowana w XV wieku w stylu gotyckim</li>
+      <li>dawny browar</li>
+      <li>możliwe, że budynek nosił nazwę Kamienicy pod św. Józefem</li>
+    </ul>
+  `,
+    
+    photos: ["assets/613116229.jpg", "assets/57d8100dc10823810cb7b9f7ba5103e6.jpeg", "assets/07c17968cdf7c1a125acf1c9dc8a3dfd.jpeg", "assets/782b86dbfb3fea110c71a38ceaa3cf1a.jpeg"],
+    plans: ["assets/Zrzut ekranu (582).png", "assets/Zrzut ekranu (583).png"]
   },
    torun: {
     coords: [53.0093, 18.6038],
