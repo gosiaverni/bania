@@ -230,14 +230,7 @@ const placesData = {
     photos: ["assets/kornikfront.jpg", "assets/kornikbok.jpg", "assets/korniktyl.jpg", "assets/kornikwieza.jpg", "assets/kornikdetale.jpg", "assets/kornikwnetrze.jpg", "assets/kornikkolumny.jpg"],
     plans: ["assets/kornikplan.jpg", "assets/kornikrekonstrukcja.jpg", "assets/kornik2rekonstrukcja.jpg", "assets/kornikfazybudowy.jpg", "assets/kornikdrzeworyt.jpg"]
   },
-   szydlow: {
-    coords: [50.5904, 20.9998],
-    icon: brownIcon,
-    title: "Zamek w Szydłowie",
-    description: "tutaj opis",
-    photos: ["assets/Chojnik-25.jpg", "assets/Chojnik-z-góry-11.jpg"],
-    plans: ["assets/Chojnik-plan-03.jpg", "assets/Chojnik-rekonstrukcja-01.jpg"]
-  },
+  
    lublin: {
     coords: [51.2505, 22.5717],
     icon: brownIcon,
@@ -270,37 +263,8 @@ const placesData = {
     photos: ["assets/hetmanskafront.jpg", "assets/hetmanskaportal.jpg", "assets/hetmanskadetal.jpg"],
     plans: ["assets/PL.1.9.ZIPOZ.NID_N_12_EN.521649-1.jpg"]
   },
-  krakow_margrabska: {
-    coords: [50.062350659159826, 19.938976882506278],
-    icon: goldIcon,
-    title: "Kraków - Kamienica Margrabska",
-    description: `
-    <p>Miejsce pobytu historycznych postaci.</p>
-    <ul>
-    <li>murowany obiekt powstał w drugiej połowie XIII wieku</li>
-      <li>dawna mennica, a następnie hotel</li>
-      <li>przebywał w niej Tadeusz Kościuszko oraz Stanisław Moniuszko</li>
-      
-    </ul>
-  `,
-    photos: ["assets/5aa67f99087ad.jpg", "assets/margrabskabok.jpg", "assets/margrabskawejscie.jpg", "assets/margrabskaportal.jpg", "assets/margrabskadetal.jpg"],
-    plans: ["assets/margrabska plan.jpg"]
-  },
-  wroclaw_podpsem: {
-    coords: [51.11058409469943, 17.033564139885005],
-    icon: goldIcon,
-    title: "Wrocław - Kamienica Pod Złotym Psem",
-    description: `
-    <p>XIII-wieczna kamienica na wrocławskim rynku.</p>
-    <ul>
-      <li>charakterystyczny wykusz</li>
-      <li>bogate zdobienia budynku</li>
-      <li>od XVIII wieku zdobiona figurką złotego psa</li>
-    </ul>
-  `,
-    photos: ["assets/Kamiennica-Pod-Zlotym-Psem-Karmello-Rynek-41-05.09.2023-8.jpg", "assets/podzlotyymbok.jpg", "assets/podzlotympies.jpg", "assets/Kamiennica-Pod-Zlotym-Psem-Karmello-Rynek-41-05.09.2023-4.jpg", "assets/Kamiennica-Pod-Zlotym-Psem-Karmello-Rynek-41-05.09.2023-5.jpg"],
-    plans: ["assets/podzlotymplan.jpg", "assets/polnocna-strona-rynku-targ-lakoci-1900-1910-fotopolska-eu.jpg", "assets/kamienica-pod-zlotym-psem-1939-1944-fotopolska-eu.jpg"]
-  },
+
+ 
   wroclaw_podelektorami: {
     coords: [51.110243060000826, 17.030305226392382],
     icon: goldIcon,
@@ -331,14 +295,7 @@ const placesData = {
     photos: ["assets/Kamienica_Gdańsk,_ul._Długa_12_by_AW.jpg", "assets/uphagen - wnętrze.jpg"],
     plans: ["assets/Uphagen-House-Gdansk-12-Dluga-Street-ground-floor-plans-mezzanine-first-and-second.png"]
   },
-  gdansk_kamienica: {
-    coords: [54.349017584743585, 18.652398540033968],
-    icon: goldIcon,
-    title: "Gdańsk - kamienica przy ul. Długiej 47",
-    description: "tutaj opis",
-    photos: ["assets/test1.jpg"],
-    plans: ["assets/plan1.jpg"]
-  },
+  
    stargard: {
     coords: [53.3374, 15.0466],
     icon: goldIcon,
