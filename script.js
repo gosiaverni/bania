@@ -343,7 +343,7 @@ const placesData = {
    stargard: {
     coords: [53.3374, 15.0466],
     icon: goldIcon,
-    title: "Stargard",
+    title: "Stargard - Dom Protzena",
     description: `
     <p>Perła wśród gotyckich kamienic w Polsce.</p>
     <ul>
@@ -358,7 +358,7 @@ const placesData = {
    poznan: {
     coords: [52.4067, 16.9333],
     icon: goldIcon,
-    title: "Poznań",
+    title: "Poznań - kamienica przy Wrocławskiej 15/Gołębiej 6",
     description: `
     <p>Kamienica wybudowana w miejscu osady wczesnośredniowiecznej.</p>
     <ul>
@@ -374,7 +374,7 @@ const placesData = {
    torun: {
     coords: [53.0093, 18.6038],
     icon: goldIcon,
-    title: "Toruń",
+    title: "Toruń - Dom Kopernika",
     description: "tutaj opis",
     photos: ["assets/test1.jpg"],
     plans: ["assets/plan1.jpg"]
