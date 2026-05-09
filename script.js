@@ -202,9 +202,17 @@ const placesData = {
     coords: [49.9641, 20.7157],
     icon: brownIcon,
     title: "Zamek w Dębnie",
-    description: "tutaj opis",
-    photos: ["assets/Chojnik-25.jpg", "assets/Chojnik-z-góry-11.jpg"],
-    plans: ["assets/Chojnik-plan-03.jpg", "assets/Chojnik-rekonstrukcja-01.jpg"]
+    description: `
+    <p>Zamek z bogatym wyposażeniem architektonicznym oraz kamieniarskim.</p>
+    <ul>
+    <li>Został zbudowany w latach 1470-1480, a jego fundatorem był kanclerz koronny Jakub Dębiński</li>
+      <li>Znajduje się na wzniesieniu otoczonym fosą, na trasie z Brzeska do Tarnowa</li>
+      <li>Wybudowany z cegły, a elewacje zdobione wzorami rombowymi ułożonymi z zendrówek</li>
+      
+    </ul>
+  `,
+    photos: ["assets/568f8bfd885c5.jpg", "assets/568f8bfc17bb7.jpg", "assets/568f8bfb93f04.jpg", "assets/568f8bfb17c61.jpg", "assets/568f8bfa955f8.jpg", "assets/568f8bfa1a110.jpg"],
+    plans: ["assets/PL.1.9.ZIPOZ.NID_N_12_EN.442801-16.jpg", "assets/PL.1.9.ZIPOZ.NID_N_12_EN.442801-15.jpg", "assets/61fc3883b2241.jpg"]
   },
    kornik: {
     coords: [52.2439, 17.0908],
