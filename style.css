@@ -440,3 +440,22 @@ body {
   padding-left: 0;
   margin-left: 20px; /* 🔥 lepsze niż padding */
 }
+#bibliografiaPopup .popup-content {
+  max-height: 80vh;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+/* scrollbar */
+#bibliografiaPopup .popup-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+#bibliografiaPopup .popup-content::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+#bibliografiaPopup .popup-content::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
