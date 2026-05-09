@@ -24,29 +24,6 @@ const brownIcon = L.divIcon({
 });
 
 
-const introBtnCastles = document.getElementById('introBtnCastles');
-const introBtnCities = document.getElementById('introBtnCities');
-
-const introPopup = document.getElementById('introPopup');
-const closeIntro = document.getElementById('closeIntro');
-
-[introBtnCastles, introBtnCities].forEach(btn => {
-  btn.addEventListener('click', () => {
-    introPopup.classList.add('active');
-  });
-});
-
-// zamykanie
-closeIntro.addEventListener('click', () => {
-  introPopup.classList.remove('active');
-});
-
-// klik poza popupem
-introPopup.addEventListener('click', (e) => {
-  if (e.target === introPopup) {
-    introPopup.classList.remove('active');
-  }
-});
 
 document.querySelectorAll('.submenu button').forEach(button => {
   button.addEventListener('click', () => {
