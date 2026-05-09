@@ -165,11 +165,11 @@ const placesData = {
     icon: brownIcon,
     title: "Zamek Chojnik",
     description: `
-    <p>Zamek położony w Karkonoszach.</p>
+    <p>Atrakcja turystyczna ze schroniskiem.</p>
     <ul>
-      <li>budowa: XIV wiek</li>
-      <li>funkcja: obronna</li>
-      <li>lokalizacja: góra Chojnik</li>
+      <li>Najstarsza część tzw. górnego zamku powstała zapewne z inicjatywy ks. świdnickiego Bolka II Małego w latach 1353-64</li>
+      <li>W 1 poł. XV w. powstał tzw. zamek dolny</li>
+      <li>Wzniesiony na górze o wysokości 627 metrów n.p.m. - przez swoje położenie niezwykle trudna do zdobycia </li>
     </ul>
   `,
     photos: ["assets/Chojnik-25.jpg", "assets/Chojnik-z-góry-11.jpg"],
