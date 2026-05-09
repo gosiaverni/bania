@@ -179,9 +179,16 @@ const placesData = {
     coords: [50.9217, 16.0978],
     icon: brownIcon,
     title: "Zamek w Bolkowie",
-    description: "tutaj opis",
-    photos: ["assets/Chojnik-25.jpg", "assets/Chojnik-z-góry-11.jpg"],
-    plans: ["assets/Chojnik-plan-03.jpg", "assets/Chojnik-rekonstrukcja-01.jpg"]
+    description: `
+    <p>Zamek rzeźbiony krajobrazem.</p>
+    <ul>
+      <li>Wygląd zamku podyktowany formą wierzchołka wydłużonego, wysokiego wzgórza na którym został wzniesiony, opływanego od północy i zachodu przez wody Nysy Szalonej, a od wschodu opadającego stokami ku miastu</li>
+      <li>Mógł zostać wzniesiony z inicjatywy Bolesława II Łysego w XIII wieku</li>
+      <li>Po 1810 stał się własnością państwa pruskiego i był stopniowo rozbierany </li>
+    </ul>
+  `,
+    photos: ["assets/Bolków-02.jpg", "assets/Bolkow-5.jpg", "assets/Bolkow-11.jpg", "assets/Bolkow-dziedziniec-10.jpg", "assets/Bolkow-dziedziniec-17.jpg", "assets/Bolkow-podzamcze-17.jpg", "assets/Bolkow-portal-02.jpg", "assets/Bolkow-wieza-11.jpg"],
+    plans: ["assets/Bolków-plan-11.jpg","assets/Bolków-rekonstrukcja-20.jpg", "assets/Bolkow-archiwalne-01.jpg"]
   },
   czersk: {
     coords: [51.9581, 21.2340],
@@ -203,9 +210,16 @@ const placesData = {
     coords: [52.2624, 19.5620],
     icon: brownIcon,
     title: "Zamek w Oporowie",
-    description: "tutaj opis",
-    photos: ["assets/Chojnik-25.jpg", "assets/Chojnik-z-góry-11.jpg"],
-    plans: ["assets/Chojnik-plan-03.jpg", "assets/Chojnik-rekonstrukcja-01.jpg"]
+    description: `
+    <p>Przykład zamku typu nizinnego.</p>
+    <ul>
+      <li>Pierwszy drewniany dwór mógł powstać w połowie XIV wieku</li>
+      <li>Zamek murowany wzniesiono dopiero w latach 1434-1449 przez biskupa kujawskiego Władysława Oporowskiego</li>
+      <li>Położony na wyspie otoczonej wodą</li>
+    </ul>
+  `,
+    photos: ["assets/Oporow-03.jpg", "assets/Oporow-13.jpg", "assets/Oporow-25.jpg", "assets/Oporow-dziedziniec-05.jpg", "assets/Oporow-dziedziniec-06.jpg", "assets/Oporow-dziedziniec-08.jpg"],
+    plans: ["assets/Oporow-plan-04.jpg", "assets/Oporów-plan-07.jpg", "assets/Oporów-rekonstrukcja-01.jpg"]
   },
   debno: {
     coords: [49.9641, 20.7157],
