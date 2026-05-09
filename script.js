@@ -375,9 +375,16 @@ const placesData = {
     coords: [53.0093, 18.6038],
     icon: goldIcon,
     title: "Toruń - Dom Kopernika",
-    description: "tutaj opis",
-    photos: ["assets/test1.jpg"],
-    plans: ["assets/plan1.jpg"]
+    description: `
+    <p>Możliwy dom Mikołaja Kopernika.</p>
+    <ul>
+      <li>wybudowana w XIV-XV wieku</li>
+      <li>bogate fryzy i blendy</li>
+      <li>obecnie Muzeum Kopernika</li>
+    </ul>
+  `,
+    photos: ["assets/CopernicusHouse.jpg", "assets/Dom_kopernika_2,_ul_kopernika.jpg", "assets/dom-kopernika.jpg", "assets/568fe1ca46576.jpg"],
+    plans: ["assets/Torun-dom-plan-Kopernika-15-01.jpg", "assets/Torun-dom-plan-Kopernika-15-02.jpg", "assets/Torun-dom-plan-Kopernika-15-03.jpg"]
   },
   
 };
