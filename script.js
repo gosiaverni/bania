@@ -23,6 +23,12 @@ const brownIcon = L.divIcon({
   iconAnchor: [15, 30]
 });
 
+const romanIcon = L.divIcon({
+  html: '<img src="assets/romanpoint.png" class="map-point-inner">',
+  className: 'map-point-wrapper',
+  iconSize: [30, 30],
+  iconAnchor: [15, 30]
+});
 
 
 document.querySelectorAll('.submenu button').forEach(button => {
@@ -39,310 +45,289 @@ document.querySelectorAll('.submenu button').forEach(button => {
   });
 });
 
-// przycisk "Bibliografia"
-const bibliografiaBtn = document.querySelector('.bottom-menu button:nth-child(3)');
-const popup = document.getElementById('bibliografiaPopup');
-const closeBtn = document.getElementById('closePopup');
 
-bibliografiaBtn.addEventListener('click', () => {
-  popup.classList.add('active');
-});
-
-closeBtn.addEventListener('click', () => {
-  popup.classList.remove('active');
-});
-
-// klik poza popupem = zamknij
-popup.addEventListener('click', (e) => {
-  if (e.target === popup) {
-    popup.classList.remove('active');
-  }
-});
-
-// przycisk quiz (pierwszy w bottom-menu)
-const quizBtn = document.querySelector('.bottom-menu button:nth-child(1)');
-const quizPopup = document.getElementById('quizPopup');
-const closeQuiz = document.getElementById('closeQuiz');
-
-quizBtn.addEventListener('click', () => {
-  quizPopup.classList.add('active');
-});
-
-closeQuiz.addEventListener('click', () => {
-  quizPopup.classList.remove('active');
-});
-
-quizPopup.addEventListener('click', (e) => {
-  if (e.target === quizPopup) {
-    quizPopup.classList.remove('active');
-  }
-});
-
-document.getElementById('checkQuiz').addEventListener('click', () => {
-  const form = document.getElementById('quizForm');
-  const result = document.getElementById('quizResult');
-
-  let score = 0;
-  let total = 3;
-
-  for (let i = 1; i <= total; i++) {
-    const answer = form.querySelector(`input[name="q${i}"]:checked`);
-    if (answer && answer.value === "1") {
-      score++;
-    }
-  }
-
-  result.textContent = `Twój wynik: ${score} / ${total}`;
-});
-
-const quizKamieniceBtn = document.querySelector('.bottom-menu button:nth-child(2)');
-const quizKamienicePopup = document.getElementById('quizKamienicePopup');
-const closeQuizKamienice = document.getElementById('closeQuizKamienice');
-
-quizKamieniceBtn.addEventListener('click', () => {
-  quizKamienicePopup.classList.add('active');
-});
-
-closeQuizKamienice.addEventListener('click', () => {
-  quizKamienicePopup.classList.remove('active');
-});
-
-quizKamienicePopup.addEventListener('click', (e) => {
-  if (e.target === quizKamienicePopup) {
-    quizKamienicePopup.classList.remove('active');
-  }
-});
-
-document.getElementById('checkQuizKamienice').addEventListener('click', () => {
-  const form = document.getElementById('quizKamieniceForm');
-  const result = document.getElementById('quizKamieniceResult');
-
-  let score = 0;
-  let total = 3;
-
-  for (let i = 1; i <= total; i++) {
-    const answer = form.querySelector(`input[name="k${i}"]:checked`);
-    if (answer && answer.value === "1") {
-      score++;
-    }
-  }
-
-  result.textContent = `Twój wynik: ${score} / ${total}`;
-});
-
-closeQuizKamienice.addEventListener('click', () => {
-  quizKamienicePopup.classList.remove('active');
-  document.getElementById('quizKamieniceForm').reset();
-  document.getElementById('quizKamieniceResult').textContent = "";
-});
 
 const placesData = {
-  chojnik: {
-    coords: [50.8338, 15.6442],
+  akwizgran: {
+    coords: [50.77486903276205, 6.0839308263774],
     icon: brownIcon,
-    title: "Zamek Chojnik",
+    title: "Katedra w Akwizgranie",
     description: `
-    <p>Atrakcja turystyczna ze schroniskiem.</p>
+    <p>około 800-805 r.</p>
     <ul>
-      <li>Najstarsza część tzw. górnego zamku powstała zapewne z inicjatywy ks. świdnickiego Bolka II Małego w latach 1353-64</li>
-      <li>W 1 poł. XV w. powstał tzw. zamek dolny</li>
-      <li>Wzniesiony na górze o wysokości 627 metrów n.p.m. - przez swoje położenie niezwykle trudna do zdobycia </li>
+      <li>Katedra składa się z trzech części, z których najstarszą jest dawna kaplica pałacowa Karola Wielkiego (Pfalzkapelle) – jeden z nielicznych zachowanych zabytków sztuki karolińskiej. </li>
+      <li>Katedra przez 600 lat (936–1531) była miejscem koronacji 30 władców Świętego Cesarstwa Rzymskiego.</li>
+      <li>W XIV w. rozpoczęto budowę (ukończoną w następnym stuleciu) gotyckiego prezbiterium, które jest miejscem spoczynku Karola Wielkiego.</li>
+      <li>W latach 1355–1414 wzniesiono gotyckie prezbiterium, wzorowane na Sainte-Chapelle w Paryżu.</li>
+      <li>Kaplica zbudowana jest na planie ośmiokąta, który w starożytności uznawany był za formę doskonałą, znajdującą się pomiędzy kołem a kwadratem. Koło pozbawione początku i końca symbolizowało nieskończoność nieba. Kwadrat, natomiast, symbolizował ograniczoną formę Ziemi, a jego cztery kąty wyznaczały kierunki niebieskie.</li>
+      <li>Wymiary kaplicy odzwierciedlają biblijne rozmiary niebiańskiego Jeruzalem: długość, szerokość i wysokość są sobie równe.</li>
+      <li>Prezbiterium pełni funkcję sanktuarium mieszczącego cztery najwyższej wagi relikwie Marii, Jezusa oraz Jana Chrzciciela, które pochowane są w późnoromańskim relikwiarzu Marii. Świątynia była jednym z najważniejszych ośrodków pielgrzymkowych w Europie, a dawna tradycja wystawiania co siedem lat relikwii jest kontynuowana w niej do dziś.</li>
+      <li>Bezpośrednią inspiracją i wzorem dla architektów w Akwizgranie był, powstały w VI wieku, kościół San Vitale w Rawennie. Karol Wielki marzył o budowli przewyższającej swą doskonałością wszystkie dotychczasowe konstrukcje, dlatego też budowniczych do prac przy świątyni sprowadzono z zagranicy. </li>
     </ul>
   `,
-    photos: ["assets/Chojnik-25.jpg", "assets/Chojnik-z-góry-11.jpg"],
-    plans: ["assets/Chojnik-plan-03.jpg", "assets/Chojnik-rekonstrukcja-01.jpg"]
-  },
-  bolkow: {
-    coords: [50.9217, 16.0978],
-    icon: brownIcon,
-    title: "Zamek w Bolkowie",
-    description: `
-    <p>Zamek rzeźbiony krajobrazem.</p>
-    <ul>
-      <li>Wygląd zamku podyktowany formą wierzchołka wydłużonego, wysokiego wzgórza na którym został wzniesiony, opływanego od północy i zachodu przez wody Nysy Szalonej, a od wschodu opadającego stokami ku miastu</li>
-      <li>Mógł zostać wzniesiony z inicjatywy Bolesława II Łysego w XIII wieku</li>
-      <li>Po 1810 stał się własnością państwa pruskiego i był stopniowo rozbierany </li>
-    </ul>
-  `,
-    photos: ["assets/Bolków-02.jpg", "assets/Bolkow-5.jpg", "assets/Bolkow-11.jpg", "assets/Bolkow-dziedziniec-10.jpg", "assets/Bolkow-dziedziniec-17.jpg", "assets/Bolkow-podzamcze-17.jpg", "assets/Bolkow-portal-02.jpg", "assets/Bolkow-wieza-11.jpg"],
-    plans: ["assets/Bolków-plan-11.jpg","assets/Bolków-rekonstrukcja-20.jpg", "assets/Bolkow-archiwalne-01.jpg"]
-  },
-  czersk: {
-    coords: [51.9581, 21.2340],
-    icon: brownIcon,
-    title: "Zamek w Czersku",
-    description: `
-    <p>Siedziba książąt mazowieckich.</p>
-    <ul>
-    <li>murowany obiekt zbudowany w XIV wieku</li>
-      <li>usytuowany w zakolu Wisły oraz jej rozgałęzień</li>
-      <li>zamek zaniedbany, a następnie zniszczony przez Szwedów w XVII wieku</li>
-      
-    </ul>
-  `,
-    photos: ["assets/czerskcaly.jpg", "assets/czerskwiezabramna.jpg", "assets/czerskdziedz.jpg", "assets/czerskplnwsch.jpg", "assets/czerskwiezapldwsch.jpg","assets/czerskwiezaplnzach.jpg", "assets/czerskplnwsch.jpg"],
-    plans: ["assets/czerskplan.jpg", "assets/czerskrekons15.jpg", "assets/czerskplanwiezy.jpg", "assets/czerskplanywiez.jpg", "assets/czerskprzekrojwiezy.jpg", "assets/czerskprzekrojwiez.jpg", "assets/czerskdrzew.jpg"]
-  },
-  oporow: {
-    coords: [52.2624, 19.5620],
-    icon: brownIcon,
-    title: "Zamek w Oporowie",
-    description: `
-    <p>Przykład zamku typu nizinnego.</p>
-    <ul>
-      <li>Pierwszy drewniany dwór mógł powstać w połowie XIV wieku</li>
-      <li>Zamek murowany wzniesiono dopiero w latach 1434-1449 przez biskupa kujawskiego Władysława Oporowskiego</li>
-      <li>Położony na wyspie otoczonej wodą</li>
-    </ul>
-  `,
-    photos: ["assets/Oporow-03.jpg", "assets/Oporow-13.jpg", "assets/Oporow-25.jpg", "assets/Oporow-dziedziniec-05.jpg", "assets/Oporow-dziedziniec-06.jpg", "assets/Oporow-dziedziniec-08.jpg"],
-    plans: ["assets/Oporow-plan-04.jpg", "assets/Oporów-plan-07.jpg", "assets/Oporów-rekonstrukcja-01.jpg"]
-  },
-  debno: {
-    coords: [49.9641, 20.7157],
-    icon: brownIcon,
-    title: "Zamek w Dębnie",
-    description: `
-    <p>Zamek z bogatym wyposażeniem architektonicznym oraz kamieniarskim.</p>
-    <ul>
-    <li>Został zbudowany w latach 1470-1480, a jego fundatorem był kanclerz koronny Jakub Dębiński</li>
-      <li>Znajduje się na wzniesieniu otoczonym fosą, na trasie z Brzeska do Tarnowa</li>
-      <li>Wybudowany z cegły, a elewacje zdobione wzorami rombowymi ułożonymi z zendrówek</li>
-      
-    </ul>
-  `,
-    photos: ["assets/568f8bfd885c5.jpg", "assets/568f8bfc17bb7.jpg", "assets/568f8bfb93f04.jpg", "assets/568f8bfb17c61.jpg", "assets/568f8bfa955f8.jpg", "assets/568f8bfa1a110.jpg"],
-    plans: ["assets/PL.1.9.ZIPOZ.NID_N_12_EN.442801-16.jpg", "assets/PL.1.9.ZIPOZ.NID_N_12_EN.442801-15.jpg", "assets/61fc3883b2241.jpg"]
-  },
-   kornik: {
-    coords: [52.2439, 17.0908],
-    icon: brownIcon,
-    title: "Zamek w Kórniku",
-    description: `
-    <p>Jedno z najstarszych muzeów w Polsce.</p>
-    <ul>
-    <li>zbudowany w drugiej połowie XIV wieku.</li>
-      <li>usytuowany na szlaku z Poznania do Wrocławia</li>
-      <li>charakterystyczny ryzalit z ostrołuczną wnęką obejmującą dwie kondygnacje</li>
-      
-    </ul>
-  `,
-    photos: ["assets/kornikfront.jpg", "assets/kornikbok.jpg", "assets/korniktyl.jpg", "assets/kornikwieza.jpg", "assets/kornikdetale.jpg", "assets/kornikwnetrze.jpg", "assets/kornikkolumny.jpg"],
-    plans: ["assets/kornikplan.jpg", "assets/kornikrekonstrukcja.jpg", "assets/kornik2rekonstrukcja.jpg", "assets/kornikfazybudowy.jpg", "assets/kornikdrzeworyt.jpg"]
-  },
-  
-   lublin: {
-    coords: [51.2505, 22.5717],
-    icon: brownIcon,
-    title: "Zamek w Lublinie",
-    description: `
-    <p>Zamek królewski w centrum miasta.</p>
-    <ul>
-      <li>zbudowany w XII wieku</li>
-      <li>rezydencja królewska w XVI wieku</li>
-      <li>miejsce podpisania Unii Lubelskiej</li>
-      <li>średniowieczny donżon i kaplica</li>
-      <li>obecnie siedziba Muzeum Narodowego w Lublinie</li>
-    </ul>
-  `,
-    photos: ["assets/zamek lublin.jpg", "assets/lublindonzonikaplica.jpg", "assets/lublin podworze.jpg", "assets/lublin kaplica.jpg", "assets/Trinity_Chapel_in_Lublin_2014-08-09-211.jpg"],
-    plans: ["assets/Lublin-plan-01.jpg", "assets/Lublin-rekonstrukcja-02.jpg", "assets/Lublin-kaplica-św-Trójcy-plan-02.jpg", "assets/Lublin-rekonstrukcja-01.jpg"]
-  },
-  krakow_hetmanska: {
-    coords: [50.06063182353387, 19.937206111002542],
-    icon: goldIcon,
-    title: "Kraków - Kamienica Hetmańska",
-    description:  `
-    <p>Możliwa rezydencja Kazimierza Wielkiego.</p>
-    <ul>
-      <li>zbudowana pod koniec XIII wieku</li>
-      <li>własność wielu wpływowych rodów</li>
-      <li>sala gotycka na parterze kamienicy</li>
-    </ul>
-  `,
-    photos: ["assets/hetmanskafront.jpg", "assets/hetmanskaportal.jpg", "assets/hetmanskadetal.jpg"],
-    plans: ["assets/PL.1.9.ZIPOZ.NID_N_12_EN.521649-1.jpg"]
+    photos: ["assets/21.jpg", "assets/20.jpg"],
+    plans: ["assets/18.jpg"]
+    
   },
 
- 
-  wroclaw_podelektorami: {
-    coords: [51.110243060000826, 17.030305226392382],
-    icon: goldIcon,
-    title: "Wrocław - Kamienica Pod Siedmioma Elektorami",
+    fulda: {
+    coords: [50.55379550387083, 9.671312139860154],
+    icon: brownIcon,
+    title: "Katedra Świętego Zbawiciela i św. Sebastiana w Fuldzie",
     description: `
-    <p>Jedna z najstarszych kamienic Wrocławia.</p>
+    <p>około 800 r.</p>
     <ul>
-      <li>malowidła przedstawiające 7 elektorów oraz cesarza Leopolda I</li>
-      <li>własność rodu patrycjuszy von Uthmannów</li>
-      <li>zachowane gotyckie elementy</li>
+      <li>mieści grób św. Bonifacego</li>
+      <li></li>
+      <li> </li>
     </ul>
   `,
-    photos: ["assets/Kamienica_Pod_Siedmioma_Elektorami_Wroclaw_4735691.jpg", "assets/Kamienica_Pod_Siedmioma_Elektorami_Wroclaw_5291481.jpg","assets/Portal_kamienicy_Pod_Siedmioma_Elektorami_Wrocław.jpg", "assets/House_of_the_Seven_Electors.jpg"],
-    plans: ["assets/Kamienica_Pod_Siedmioma_Elektorami_Wroclaw_167087.jpg", "assets/Kamienica_Pod_Siedmioma_Elektorami_Wroclaw_4345968.jpg", "assets/Zachodnia_strona_Rynku_Siedmiu_Elektorow_Targ_Welny_pl_Rynek_Wroclaw_8240.jpg", "assets/Kamienica_Pod_Siedmioma_Elektorami_Wroclaw_406123.jpg", "assets/Kamienica_Pod_Siedmioma_Elektorami_Wroclaw_4732249.jpg"]
-  },
-  gdansk_dom: {
-    coords: [54.3494517834884, 18.649338897705622],
-    icon: goldIcon,
-    title: "Gdańsk - Dom Uphagena",
-    description: `
-    <p>Kamienica udostępniona do zwiedzania.</p>
-    <ul>
-      <li>zbudowana w XIV, lecz przebudowana w XVI wieku</li>
-      <li>nazwa pochodzi od wpływowego rodu Uphagenów</li>
-      <li>obecnie oddział Muzeum Gdańska</li>
-    </ul>
-  `,
-    photos: ["assets/Kamienica_Gdańsk,_ul._Długa_12_by_AW.jpg", "assets/uphagen - wnętrze.jpg"],
-    plans: ["assets/Uphagen-House-Gdansk-12-Dluga-Street-ground-floor-plans-mezzanine-first-and-second.png"]
+    photos: [""],
+    plans: ["assets/25a.jpg"]
+    
   },
   
-   stargard: {
-    coords: [53.3374, 15.0466],
-    icon: goldIcon,
-    title: "Stargard - Dom Protzena",
+  sanktgallen: {
+    coords: [47.42367212447818, 9.377636368560477],
+    icon: brownIcon,
+    title: "Opactwo Sankt Gallen",
     description: `
-    <p>Perła wśród gotyckich kamienic w Polsce.</p>
+    <p>około 817-818 r.</p>
     <ul>
-      <li>zbudowana w I połowie XV wieku</li>
-      <li>przykład blendy stargardzkiej</li>
-      <li>część Europejskiego Szlaku Gotyku Ceglanego</li>
+      <li></li>
+      <li></li>
+      <li> </li>
     </ul>
   `,
-    photos: ["assets/stargard - zdjęcie (2).jpg", "assets/stargard - zdjęcie (1).jpg", "assets/stargard - zdjęcie (3).jpg"],
-    plans: ["assets/stargard - plan (1).jpg"]
+    photos: [""],
+    plans: ["assets/28.jpg"]
   },
-   poznan: {
-    coords: [52.4067, 16.9333],
-    icon: goldIcon,
-    title: "Poznań - kamienica przy Wrocławskiej 15/Gołębiej 6",
+  spira: {
+    coords: [49.31734574129325, 8.442188582134193],
+    icon: brownIcon,
+    title: "Katedra w Spirze",
     description: `
-    <p>Kamienica wybudowana w miejscu osady wczesnośredniowiecznej.</p>
+    <p>1030-1040 - krypty; 1040-1061 - nawa; 1082-1106 - zasklepienie; ok. 1137 ukończenie</p>
     <ul>
-      <li>wybudowana w XV wieku w stylu gotyckim</li>
-      <li>dawny browar</li>
-      <li>możliwe, że budynek nosił nazwę Kamienicy pod św. Józefem</li>
+    <li>Największa zachowana do dziś świątynia romańska na świecie, niegdyś ustępowała wielkością jedynie kościołowi opackiemu w Cluny.</li>
+      <li>Wzniesiona z fundacji cesarzy salickich, służąca dla prestiżowych nabożeństw i dworskich ceremonii.</li>
+      <li>Katedra była kościołem grzebalnym cesarzy i władców Rzeszy dynastii salickiej oraz staufickiej i habsburskiej.</li>
+      <li>Jedna z trzech (obok katedr w Moguncji i Wormacji) katedr cesarskich typu nadreńskiego.</li>
+      
+    </ul>
+  `,
+    photos: ["assets/30.jpg", "assets/73.jpg"],
+    plans: ["assets/63.jpg"]
+  },
+  cluny2: {
+    coords: [46.43499761720928, 4.658479739683457],
+    icon: brownIcon,
+    title: "Kongregacja kluniacka - Cluny II",
+    description: `
+    <p>981 r.</p>
+    <ul>
+      <li>system schodkowy albo piramidalny</li>
+      <li>benedyktyni</li>
+      <li></li>
+    </ul>
+  `,
+    photos: [""],
+    plans: ["assets/clunyii.jpg"]
+  },
+  hildesheim: {
+    coords: [47.81014186632338, 2.3056407997202157],
+    icon: brownIcon,
+    title: "Katedra Wniebowzięcia Matki Bożej w Hildesheimie?",
+    description: `
+    <p>1010-1033 r.</p>
+    <ul>
+    <li>Trójnawowa bazylika krzyżowa z transeptem została poświęcona w 872. Spłonęła w wielkim pożarze, odbudowana w 1046 przez biskupa Hazilo.</li>
+      <li></li>
+      <li></li>
+      
+    </ul>
+  `,
+    photos: [""],
+    plans: ["assets/46.jpg"]
+  },
+   kolonianmp: {
+    coords: [50.9347764446711, 6.958421024533939],
+    icon: brownIcon,
+    title: "Kościół Najświętszej Marii Panny na Kapitolu",
+    description: `
+    <p>VII w.; 1030-1049 r.; 1240 sklepienia</p>
+    <ul>
+    <li>W swojej monumentalnej architekturze wyrażał ambicje Ottonów, siłę cesarza oraz jego hegemonię w Rzeszy. W zachodniej części nawy głównej wzniesiono galerię-emporę zastrzeżoną dla cesarza. Od strony formalnej część ta była swobodną recepcją architektury karolińskiej kaplicy pałacowej w Akwizgranie.</li>
+      <li>Zbudowany na planie treflowym (odmiana planu krzyża z zaokrąglonymi trzema ramionami).</li>
+      <li>Największe zmiany dokonano podczas przebudowy części wschodniej, gdzie wzniesiono chór na planie trójliścia. Zastosowanie takiej struktury przestrzennej chóru było odwołaniem do planu Bazyliki Narodzenia w Betlejem, o treflowym układzie chóru, przy czym w przypadku kolońskiej świątyni motyw trójliścia został silniej wyeksponowany.</li>
+      <li></li>
+      
+    </ul>
+  `,
+    photos: [""],
+    plans: ["assets/103.jpg"]
+  },
+  
+   sernin: {
+    coords: [43.60847870827673, 1.4418575414204216],
+    icon: brownIcon,
+    title: "Bazylika (Saint Sernin) św. Saturnina w Tuluzie",
+    description: `
+    <p>po 1080 r.</p>
+    <ul>
+      <li>wzniesiona nad grobem św. Saturnina</li>
+      <li>relikwie św. Edmunda i św. Gilberta</li>
+      <li>cierń z korony cierniowej Chrystusa</li>
+    </ul>
+  `,
+    photos: ["assets/tuluza1.jpg", "assets/tuluza2.jpg", "assets/tuluza3.jpg", "assets/tuluza4.jpg", "assets/tuluza5.jpg"],
+    plans: ["assets/tuluzaplan.jpg"]
+  },
+  
+ 
+  santiago: {
+    coords: [42.880868792144064, -8.544459775801512],
+    icon: brownIcon,
+    title: "Katedra w Santiago de Compostela",
+    description: `
+    <p>od 1077 r.</p>
+    <ul>
+      <li>miejsce spoczynku św. Jakuba Większego jednego z dwunastu apostołów</li>
+      <li>Jedna z najważniejszych świątyń pielgrzymkowych, miejsce docelowe drogi Świętego Jakuba.</li>
+      <li></li>
+    </ul>
+  `,
+    photos: ["assets/santiago1.jpg", "assets/santiago2.jpg","assets/santiago3.jpg", "assets/santiago4.jpg"],
+    plans: ["assets/santiagoplan.jpg"]
+  },
+ 
+   cluny3: {
+    coords: [46.435995807204506, 4.656333972557178],
+    icon: brownIcon,
+    title: "Cluny III",
+    description: `
+    <p>1089-1131/2 r.</p>
+    <ul>
+    <li>benedyktyni</li>
+      <li>Cluny było to największy klasztor, jaki kiedykolwiek zbudowano w Europie Zachodniej. </li>
+      <li>Stanowił centrum myśli politycznej, oparcie dla idei wypraw krzyżowych i hiszpańskiej rekonkwisty.</li>
+      
     </ul>
   `,
     
-    photos: ["assets/613116229.jpg", "assets/57d8100dc10823810cb7b9f7ba5103e6.jpeg", "assets/07c17968cdf7c1a125acf1c9dc8a3dfd.jpeg", "assets/782b86dbfb3fea110c71a38ceaa3cf1a.jpeg"],
-    plans: ["assets/Zrzut ekranu (582).png", "assets/Zrzut ekranu (583).png"]
+    photos: ["assets/clunyiii1.jpg", "assets/clunyiii2.jpg", "assets/clunyiii3.jpg", "assets/clunyiii4.jpg", "assets/clunyiii5.jpg", "assets/clunyiii6.jpg"],
+    plans: ["assets/clunyiiiplan.jpg"]
   },
-   torun: {
-    coords: [53.0093, 18.6038],
-    icon: goldIcon,
-    title: "Toruń - Dom Kopernika",
+
+
+  caentrojcy: {
+    coords: [49.18653493096951, -0.3530372025283078],
+    icon: brownIcon,
+    title: "Kościół Świętej Trójcy w Caen",
     description: `
-    <p>Możliwy dom Mikołaja Kopernika.</p>
+    <p>1060-1120 r.</p>
     <ul>
-      <li>wybudowana w XIV-XV wieku</li>
-      <li>bogate fryzy i blendy</li>
-      <li>obecnie Muzeum Kopernika</li>
+      <li>Normandia</li>
+      <li>Opactwo zostało założone jako klasztor benedyktynek pod koniec XI wieku przez Wilhelma Zdobywcę i jego żonę Matyldę Flandryjską </li>
+      <li>odpowiednik św. Szczepana w Caen, ale dla kobiet</li>
+      <li>Matylda, która zmarła w 1083 roku, została pochowana w prezbiterium pod płytą z czarnego marmuru.</li>
     </ul>
   `,
-    photos: ["assets/CopernicusHouse.jpg", "assets/Dom_kopernika_2,_ul_kopernika.jpg", "assets/dom-kopernika.jpg", "assets/568fe1ca46576.jpg"],
-    plans: ["assets/Torun-dom-plan-Kopernika-15-01.jpg", "assets/Torun-dom-plan-Kopernika-15-02.jpg", "assets/Torun-dom-plan-Kopernika-15-03.jpg"]
+    photos: ["assets/caentrinity1.jpg", "assets/caentrinity2.jpg", "assets/caentrinity3.jpg", "assets/caentrinity4.jpg"],
+    plans: ["assets/caentrinityplan.jpg"]
+  },
+
+
+  
+  durham: {
+    coords: [54.77336283192895, -1.5763813734385668],
+    icon: brownIcon,
+    title: "Katedra w Durham",
+    description: `
+    <p>po 1093 r.</p>
+    <ul>
+      <li>W roku 995 roku po sprowadzeniu do Durham relikwii św. Kutberta i czaszki św. Oswalda tutejszy kościół stał się celem pielgrzymek.</li>
+      <li>Rozpoczęto wtedy budowę katedry, która jest aktualnie jedynym kościołem w Anglii zachowanym niemal w niezmienionej formie nadanej przez normańskich budowniczych.</li>
+      <li>W 1175 roku została zbudowana Kaplica Galilejska.</li>
+    </ul>
+  `,
+    photos: ["assets/durham1.jpg", "assets/durham2.jpg", "assets/durham3.jpg", "assets/durham4.jpg", "assets/durham5.jpg", "assets/durham6.jpg"],
+    plans: ["assets/durhamplan.jpg"]
   },
   
+  
+ 
+  rawenna: {
+    coords: [44.38032946396076, 12.232650083779237],
+    icon: brownIcon,
+    title: "Bazylika Sant’Apollinare Nuovo w Rawennie",
+    description: `
+    <p>VI wiek</p>
+    <ul>
+      <li>Jeden z wczesnochrześcijańskich zabytków, zaliczany także do okresu bizantyńskiego</li>
+      <li>Po zdobyciu Rawenny w 540 roku przez Bizantyńczyków, za Justyniana Wielkiego, kościół w 561 roku został ponownie konsekrowany i przekazany katolikom. </li>
+      <li>Wezwanie św. Apolinarego bazylika otrzymała dopiero w IX wieku, gdy sprowadzono do niej z bazyliki Sant’Apollinare in Classe relikwie tego świętego. </li>
+      <li>Od niego pochodzi nazwa budowli: nowa bazylika św. Apolinarego (starszą był Sant’Apollinare in Classe).</li>
+    </ul>
+  `,
+    photos: ["assets/_7.jpg", "assets/49.jpg"],
+    plans: [""]
+  },
+  
+
+
+  mediolan: {
+    coords: [45.46243944541083, 9.175490726151033],
+    icon: brownIcon,
+    title: "Bazylika św. Ambrożego w Mediolanie",
+    description: `
+    <p>1080, 1117 trzęsienie ziemi,
+1228 sklepienia</p>
+    <ul>
+      <li>Wzniesiona między 379 a 386 r. z woli biskupa Mediolanu, św. Ambrożego, została zbudowana w dzielnicy, w której byli pochowani chrześcijanie zamordowani w czasie prześladowań rzymskich.</li>
+      <li>Stąd nazwa Basilica Martyrium.</li>
+      <li>Sam św. Ambroży chciał umieścić w niej relikwie świętych Gerwazego i Protazego. Został w niej też pochowany, a wiele lat później, między IX a XI wiekiem, bazylika zmieniła swą nazwę na obecną.</li>
+    </ul>
+  `,
+    photos: ["assets/mediolan1.jpg", "assets/mediolan2.jpg", "assets/mediolan3.jpg", "assets/mediolan4.jpg"],
+    plans: ["assets/mediolanplan.jpg"]
+  },
+
+  wenecja: {
+    coords: [45.434696087074364, 12.339648024299333],
+    icon: brownIcon,
+    title: "Bazylika św. Marka w Wenecji",
+    description: `
+    <p>1063–1095 r.</p>
+    <ul>
+      <li>Zbudowana została w Wenecji przy placu św. Marka dla pochowania relikwii św. Marka.</li>
+      <li>Budowla wzorowana na konstantynopolitańskim kościele św. Apostołów (używana jest także nazwa kościół Dwunastu Apostołów) została zaprojektowana w stylu bizantyjskim na planie krzyża greckiego z pięcioma kopułami rozmieszczonymi nad nawami w ramionach krzyża i nad polem w przecięciu się naw.</li>
+      <li>Konstrukcja bazyliki z charakterystycznymi czaszami sklepienia wyraźnie odbiega od popularnej architektury romańskiej i staje się swoistą wizytówką niezależności Republiki Weneckiej.</li>
+    </ul>
+  `,
+    photos: ["assets/wenecja1.jpg", "assets/wenecja2.jpg", "assets/wenecja3.jpg", "assets/wenecja4.jpg"],
+    plans: ["assets/wenecjaplan.jpg"]
+  },
+
+ 
+
+   florencja: {
+    coords: [43.76080540896506, 11.265043970262106],
+    icon: brownIcon,
+    title: "Kościół San Miniato al Monte",
+    description: `
+    <p>XI-XIII w.</p>
+    <ul>
+      <li>Pierwotny kościół, według tradycji, został zbudowany na zlecenie longobardzkiej królowej Teodolindy.</li>
+      <li>Zbudowany w miejscu wczesnochrześcijańskiej świątyni przez zakon benedyktynów.</li>
+      <li></li>
+    </ul>
+  `,
+    photos: ["assets/florencja2.jpg", "assets/florencja3.jpg", "assets/florencja4.jpg", "assets/florencja5.jpg", "assets/florencja6.jpg"],
+    plans: ["assets/florencja1.jpg"]
+  },
+  
+
 };
 
 Object.keys(placesData).forEach(placeKey => {
