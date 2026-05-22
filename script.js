@@ -418,7 +418,7 @@ const placesData = {
   },
 
    tum: {
-    coords: [50.80273376326217, 21.42132327240823],
+    coords: [52.0565167815426, 19.232534869331644],
     icon: romanIcon,
     title: "Archikolegiata w Tumie",
     description: `
