@@ -135,7 +135,7 @@ const placesData = {
     plans: ["assets/clunyii.jpg"]
   },
   hildesheim: {
-    coords: [47.81014186632338, 2.3056407997202157],
+    coords: [52.14916700475636, 9.947129739931992],
     icon: brownIcon,
     title: "Katedra Wniebowzięcia Matki Bożej w Hildesheimie?",
     description: `
