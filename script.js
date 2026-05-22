@@ -270,7 +270,7 @@ const placesData = {
       <li>Od niego pochodzi nazwa budowli: nowa bazylika św. Apolinarego (starszą był Sant’Apollinare in Classe).</li>
     </ul>
   `,
-    photos: ["assets/_7.jpg"],
+    photos: [""],
     plans: [""]
   },
   
