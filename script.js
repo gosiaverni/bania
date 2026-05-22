@@ -78,7 +78,7 @@ const placesData = {
     <p>około 800 r.</p>
     <ul>
       <li>mieści grób św. Bonifacego</li>
-      <li></li>
+      <li>kształt katedry nawiązuje do bazyliki św. Piotra w Rzymie</li>
       <li> </li>
     </ul>
   `,
@@ -142,12 +142,12 @@ const placesData = {
     <p>1010-1033 r.</p>
     <ul>
     <li>Trójnawowa bazylika krzyżowa z transeptem została poświęcona w 872. Spłonęła w wielkim pożarze, odbudowana w 1046 przez biskupa Hazilo.</li>
-      <li></li>
+      <li>Inspiracja Rawenną?</li>
       <li></li>
       
     </ul>
   `,
-    photos: [""],
+    photos: ["assets/49.jpg"],
     plans: ["assets/46.jpg"]
   },
    kolonianmp: {
@@ -270,7 +270,7 @@ const placesData = {
       <li>Od niego pochodzi nazwa budowli: nowa bazylika św. Apolinarego (starszą był Sant’Apollinare in Classe).</li>
     </ul>
   `,
-    photos: ["assets/_7.jpg", "assets/49.jpg"],
+    photos: ["assets/_7.jpg"],
     plans: [""]
   },
   
@@ -326,8 +326,170 @@ const placesData = {
     photos: ["assets/florencja2.jpg", "assets/florencja3.jpg", "assets/florencja4.jpg", "assets/florencja5.jpg", "assets/florencja6.jpg"],
     plans: ["assets/florencja1.jpg"]
   },
-  
 
+    krakowandrzej: {
+    coords: [50.056719836185124, 19.938406126345445],
+    icon: romanIcon,
+    title: "Kościół św. Andrzeja w Krakowie",
+    description: `
+    <p>początek XII wieku</p>
+    <ul>
+    <li>Z fundacji palatyna Sieciecha. Był główną świątynią osady Okół.</li>
+      <li>Znajdował się początkowo pod patronatem benedyktynów z opactwa w Sieciechowie, a potem z Tyńca.</li>
+      <li>Największe zmiany dokonano podczas przebudowy części wschodniej, gdzie wzniesiono chór na planie trójliścia. Zastosowanie takiej struktury przestrzennej chóru było odwołaniem do planu Bazyliki Narodzenia w Betlejem, o treflowym układzie chóru, przy czym w przypadku kolońskiej świątyni motyw trójliścia został silniej wyeksponowany.</li>
+      <li></li>
+      
+    </ul>
+  `,
+    photos: ["assets/5.jpg"],
+    plans: ["assets/4.jpg"]
+  },
+
+    kruszwica: {
+    coords: [52.68000887194488, 18.327476439956314],
+    icon: romanIcon,
+    title: "Kolegiata św. Piotra i Pawła w Kruszwicy",
+    description: `
+    <p>przed 1150 r.</p>
+    <ul>
+    <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      
+    </ul>
+  `,
+    photos: ["assets/7.jpg", "assets/18a.jpg", "assets/P1010167.jpg"],
+    plans: ["assets/6.jpg"]
+  },
+
+    opatow: {
+    coords: [50.80273376326217, 21.42132327240823],
+    icon: romanIcon,
+    title: "Kolegiata św. Marcina w Opatowie",
+    description: `
+    <p>przed 1150 r.</p>
+    <ul>
+    <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      
+    </ul>
+  `,
+    photos: ["assets/Opatow-kolegiata-Marcina-17.jpg", "assets/Opatow-kolegiata-Marcina-26 (2).jpg"],
+    plans: ["assets/8.jpg"]
+  },
+
+   strzelno: {
+    coords: [52.630386370260666, 18.179547811118184],
+    icon: romanIcon,
+    title: "Kościół św. Trójcy i NMP w Strzelnie oraz rotunda św. Prokopa",
+    description: `
+    <p>przełom XII/XIII wiek​u</p>
+    <ul>
+    <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      
+    </ul>
+  `,
+    photos: ["assets/11.jpg", "assets/170108084037zdj5.jpg", "assets/170108084044zdj6.jpg"],
+    plans: ["assets/10.jpg", "assets/19.jpg"]
+  },
+
+   opatow: {
+    coords: [50.80273376326217, 21.42132327240823],
+    icon: romanIcon,
+    title: "Kolegiata św. Marcina w Opatowie",
+    description: `
+    <p>przed 1150 r.</p>
+    <ul>
+    <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      
+    </ul>
+  `,
+    photos: ["assets/Opatow-kolegiata-Marcina-17.jpg", "assets/Opatow-kolegiata-Marcina-26 (2).jpg"],
+    plans: ["assets/8.jpg"]
+  },
+
+   tum: {
+    coords: [50.80273376326217, 21.42132327240823],
+    icon: romanIcon,
+    title: "Archikolegiata w Tumie",
+    description: `
+    <p>I poł. XII w.</p>
+    <ul>
+    <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      
+    </ul>
+  `,
+    photos: ["assets/Kolegiata_pw._NMP_i_św._Aleksego_w_Tumie_pod_Łęczycą_3.JPG", "assets/xRenowacja-zabytkow-Archikolegiata-Leczycka-w-Tumie-baner.jpg.pagespeed.ic.P5_bwiXuA3.jpg"],
+    plans: ["assets/12.jpg"]
+  },
+
+   czerwinsk: {
+    coords: [52.39564936126928, 20.309753426450673],
+    icon: romanIcon,
+    title: "Bazylika Zwiastowania Najświętszej Marii Panny w Czerwińsku nad Wisłą",
+    description: `
+    <p>ok. 1150 r.</p>
+    <ul>
+    <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      
+    </ul>
+  `,
+    photos: ["assets/16.jpg"],
+    plans: ["assets/14.jpg"]
+  },
+  
+ prandocin: {
+    coords: [50.262787143657164, 20.091336528205215],
+    icon: romanIcon,
+    title: "Zespół kościoła św. Jana Chrzciciela w Prandocinie",
+    description: `
+    <p>po 1125 r.</p>
+    <ul>
+    <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      
+    </ul>
+  `,
+    photos: ["assets/Kościół św. Jana Chrzciciela dzwonnica Prandocin.jpg", "assets/Kościół sw. Jana Chrzciciela świątynia Prandocin.jpg"],
+    plans: [""]
+  },
+
+   wachock: {
+    coords: [51.075333271903965, 21.015263226390882],
+    icon: romanIcon,
+    title: "Opactwo Cystersów w Wąchocku",
+    description: `
+    <p>1179, ok. 1230 r.</p>
+    <ul>
+    <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      
+    </ul>
+  `,
+    photos: ["assets/z8431646V,Wachock--Opactwo-Cystersow--romanski-kapitularz.jpg"],
+    plans: ["assets/21 (1).jpg"]
+  },
+
+   
 };
 
 Object.keys(placesData).forEach(placeKey => {
