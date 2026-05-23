@@ -489,7 +489,94 @@ const placesData = {
     plans: ["assets/21 (1).jpg"]
   },
 
-   
+   zawichost: {
+    coords: [50.805070435255615, 21.861092757065148],
+    icon: romanIcon,
+    title: "Kościół rektoralny Św. Jana Chrzciciela w Zawichoście",
+    description: `
+    <p>1257 r.</p>
+    <ul>
+    <li>W prezbiterium zachowało się oryginalne sklepienie krzyżowo-żebrowe z XIII wieku.</li>
+      <li>Jest to świątynia pofranciszkańska, wybudowana dla klarysek w latach 1245–1257, przez franciszkanów była użytkowana od 1262 do 1864 roku.</li>
+      <li></li>
+      <li></li>
+      
+    </ul>
+  `,
+    photos: ["assets/dekanat_zawichost_2.jpg"],
+    plans: ["assets/25.jpg"]
+  },
+
+  koprzywnica: {
+    coords: [50.594132326402246, 21.574035580609213],
+    icon: romanIcon,
+    title: "Opactwo Cystersów w Koprzywnicy",
+    description: `
+    <p>1185-1230 r.</p>
+    <ul>
+    <li>W klasztorze zachował się do czasów współczesnych romański kapitularz, wsparty na dwóch kolumnach ze sklepieniem krzyżowo-żebrowym.</li>
+      <li>Zauważalne są ślady gotyckich sklepień oraz bogato dekorowane wsporniki w postaci maszkaronów.</li>
+      <li></li>
+      <li></li>
+      
+    </ul>
+  `,
+    photos: ["assets/IMG_4483.jpg"],
+    plans: [""]
+  },
+
+  sulejow: {
+    coords: [51.364743338591964, 19.87931772455329],
+    icon: romanIcon,
+    title: "Opactwo Cystersów w Sulejowie",
+    description: `
+    <p>1176-1230 r.</p>
+    <ul>
+    <li>Fundacji dokonał książę Kazimierz II Sprawiedliwy, sprowadzając zakonników z opactwa Morimond w Burgundii (obecnie w Szampanii) i przeznaczając im ziemie położone nieopodal przeprawy przez Pilicę w Sulejowie.</li>
+      <li>Front kościoła zdobią romański portal i rozeta.</li>
+      <li>Kościół zbudowany jest z piaskowca szydłowieckiego, kamienne są też wewnętrzne elementy konstrukcyjne i dekoracyjne, natomiast sklepienia i ściany wewnętrzne są ceglane.</li>
+      <li></li>
+      
+    </ul>
+  `,
+    photos: ["assets/Wnetrze_kosciola_Sulejow_7394217.jpg"],
+    plans: [""]
+  },
+
+   wawelkrypta: {
+    coords: [50.05476193033099, 19.93511741100227],
+    icon: romanIcon,
+    title: "Krypta św. Leonarda na Wawelu",
+    description: `
+    <p>przełom XI i XII wieku</p>
+    <ul>
+    <li>W absydzie kamienny ołtarzyk, wykonany według projektu francuskiego architekta Eugène Viollet-le-Duc. Stopień przed ołtarzem pokryty posadzką z XIII wieku.</li>
+      <li>Na środku krypty grób biskupa Maurusa (zm. 1118), odkryty w czasie prac archeologicznych w 1938 roku. Lampy w krypcie mają kształt koron królewskich.</li>
+      <li>Jest pozostałością po tzw. katedrze hermanowskiej na Wawelu.</li>
+      <li></li>
+      
+    </ul>
+  `,
+    photos: ["assets/xl (1).jpg"],
+    plans: [""]
+  },
+
+   palatia: {
+    coords: [52.52583932150222, 17.378163357142967],
+    icon: romanIcon,
+    title: "Palatia z rotundami - Ostrów Lednicki, Giecz, Przemyśl",
+    description: `
+    <p>X-XI w.</p>
+    <ul>
+    <li>Palatium na Ostrowie Lednickim – zostało zbudowane podczas panowania Mieszka I i Bolesława Chrobrego. Na podstawie przeprowadzonych badań archeologicznych wyodrębniono trzy fazy budowy i rozbudowy rezydencji zapoczątkowane w latach sześćdziesiątych X wieku. Palatium zostało zrealizowane na planie prostokąta o wymiarach 32,0 x 14,0 m, w którym wydzielono cztery pomieszczenia. Od wschodu przylegała do niego budowla centralna na planie krzyża greckiego, w którego ramionach umieszczono niewielkie absydy, a od strony wschodniej dodano absydę ołtarzową. Krzyż z absydami tworzył w rzucie formę czwórliścia, w którego środku umieszczono cztery filary o zaokrąglonych powierzchniach zewnętrznych podpierające dach lub sklepienie zamykające budowlę</li>
+      <li>Palatium w Gieczu – budowę rozpoczęto pod koniec X wieku (nie wiadomo, czy starsza jest budowla na Ostrowie Lednickim czy w Gieczu) i nigdy jej nie ukończono.</li>
+      <li>Palatium w Przemyślu – poza analogiami innych palatiów wczesnopiastowskich oraz materiałem ceramicznym, który pozwala datować obiekt przemyski między połową X i połową XI wieku, nie ma innych przesłanek archeologicznych pozwalających te ramy zacieśnić. Na podstawie kontekstu historycznego większość badaczy przyjmuje powstanie palatium na koniec panowania Bolesława Chrobrego. Istnieją dwie hipotezy określające funkcję budynku: według jednej z nich była to siedziba księcia ewentualnie biskupa albo (według nowszych ustaleń) monaster klasztoru benedyktynów i przylegająca do niego rotunda.</li>
+      <li>Nowy kierunek sztuki był wzorowany na osiągnięciach sztuki śródziemnomorskiej; czerpał z tradycji przynoszonych przez pierwszych misjonarzy. Stąd w najstarszych budowlach występuje wiele analogii do architektury północnych Włoch i państwa wielkomorawskiego. Widoczne są także wpływy sztuki karolińskiej, a w okresie późniejszym coraz silniejsze wpływy sztuki ottońskiej.</li>
+    </ul>
+  `,
+    photos: [""],
+    plans: ["assets/1.jpg"]
+  },
 };
 
 Object.keys(placesData).forEach(placeKey => {
