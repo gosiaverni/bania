@@ -329,7 +329,7 @@ const placesData = {
 
     krakowandrzej: {
     coords: [50.056719836185124, 19.938406126345445],
-    icon: romanIcon,
+    icon: brownIcon,
     title: "Kościół św. Andrzeja w Krakowie",
     description: `
     <p>początek XII wieku</p>
@@ -347,7 +347,7 @@ const placesData = {
 
     kruszwica: {
     coords: [52.68000887194488, 18.327476439956314],
-    icon: romanIcon,
+    icon: brownIcon,
     title: "Kolegiata św. Piotra i Pawła w Kruszwicy",
     description: `
     <p>przed 1150 r.</p>
@@ -365,7 +365,7 @@ const placesData = {
 
     opatow: {
     coords: [50.80273376326217, 21.42132327240823],
-    icon: romanIcon,
+    icon: brownIcon,
     title: "Kolegiata św. Marcina w Opatowie",
     description: `
     <p>przed 1150 r.</p>
@@ -383,7 +383,7 @@ const placesData = {
 
    strzelno: {
     coords: [52.630386370260666, 18.179547811118184],
-    icon: romanIcon,
+    icon: brownIcon,
     title: "Kościół św. Trójcy i NMP w Strzelnie oraz rotunda św. Prokopa",
     description: `
     <p>przełom XII/XIII wiek​u</p>
@@ -401,7 +401,7 @@ const placesData = {
 
    opatow: {
     coords: [50.80273376326217, 21.42132327240823],
-    icon: romanIcon,
+    icon: brownIcon,
     title: "Kolegiata św. Marcina w Opatowie",
     description: `
     <p>przed 1150 r.</p>
@@ -419,7 +419,7 @@ const placesData = {
 
    tum: {
     coords: [52.0565167815426, 19.232534869331644],
-    icon: romanIcon,
+    icon: brownIcon,
     title: "Archikolegiata w Tumie",
     description: `
     <p>I poł. XII w.</p>
@@ -437,7 +437,7 @@ const placesData = {
 
    czerwinsk: {
     coords: [52.39564936126928, 20.309753426450673],
-    icon: romanIcon,
+    icon: brownIcon,
     title: "Bazylika Zwiastowania Najświętszej Marii Panny w Czerwińsku nad Wisłą",
     description: `
     <p>ok. 1150 r.</p>
@@ -455,7 +455,7 @@ const placesData = {
   
  prandocin: {
     coords: [50.262787143657164, 20.091336528205215],
-    icon: romanIcon,
+    icon: brownIcon,
     title: "Zespół kościoła św. Jana Chrzciciela w Prandocinie",
     description: `
     <p>po 1125 r.</p>
@@ -473,7 +473,7 @@ const placesData = {
 
    wachock: {
     coords: [51.075333271903965, 21.015263226390882],
-    icon: romanIcon,
+    icon: brownIcon,
     title: "Opactwo Cystersów w Wąchocku",
     description: `
     <p>1179, ok. 1230 r.</p>
@@ -491,7 +491,7 @@ const placesData = {
 
    zawichost: {
     coords: [50.805070435255615, 21.861092757065148],
-    icon: romanIcon,
+    icon: brownIcon,
     title: "Kościół rektoralny Św. Jana Chrzciciela w Zawichoście",
     description: `
     <p>1257 r.</p>
@@ -509,7 +509,7 @@ const placesData = {
 
   koprzywnica: {
     coords: [50.594132326402246, 21.574035580609213],
-    icon: romanIcon,
+    icon: brownIcon,
     title: "Opactwo Cystersów w Koprzywnicy",
     description: `
     <p>1185-1230 r.</p>
@@ -527,7 +527,7 @@ const placesData = {
 
   sulejow: {
     coords: [51.364743338591964, 19.87931772455329],
-    icon: romanIcon,
+    icon: brownIcon,
     title: "Opactwo Cystersów w Sulejowie",
     description: `
     <p>1176-1230 r.</p>
@@ -545,7 +545,7 @@ const placesData = {
 
    wawelkrypta: {
     coords: [50.05476193033099, 19.93511741100227],
-    icon: romanIcon,
+    icon: brownIcon,
     title: "Krypta św. Leonarda na Wawelu",
     description: `
     <p>przełom XI i XII wieku</p>
@@ -563,7 +563,7 @@ const placesData = {
 
    palatia: {
     coords: [52.52583932150222, 17.378163357142967],
-    icon: romanIcon,
+    icon: brownIcon,
     title: "Palatia z rotundami - Ostrów Lednicki, Giecz, Przemyśl",
     description: `
     <p>X-XI w.</p>
