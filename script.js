@@ -577,6 +577,118 @@ const placesData = {
     photos: [""],
     plans: ["assets/1.jpg"]
   },
+
+  salisbury: {
+    coords: [51.06512866219027, -1.7972391294306655],
+    icon: goldIcon,
+    title: "Katedra w Salisbury",
+    description: `
+    <p>1220 – 1225 - 1266</p>
+    <ul>
+    <li>Early English</li>
+      <li>Pierwotnie założona przez Normanów, ale potem przebudowana przez Anglików.</li>
+      <li>Kapitularz został wybudowany w decorated style.</li>
+      <li></li>
+    </ul>
+  `,
+    photos: ["assets/2.jpg"],
+    plans: [""]
+  },
+
+  exeter: {
+    coords: [50.72262304634589, -3.5299185312965338],
+    icon: goldIcon,
+    title: "Katedra w Exeterze",
+    description: `
+    <p>1114 rozpoczęcie;
+1270 – 1360 - wnętrze
+</p>
+    <ul>
+    <li>Perpendicular Style</li>
+      <li>Budowę katedry rozpoczęli Normanowie w 1114, a najstarszą zachowaną częścią budowli są wieże katedry.</li>
+      <li>Wewnątrz można podziwiać najdłuższe, zachowane gotyckie sklepienie na świecie.</li>
+      <li>W 1270 biskup Walter Branscombe rozpoczął trwający 90 lat proces przebudowy katedry.</li>
+    </ul>
+  `,
+    photos: ["assets/5 (1).jpg"],
+    plans: [""]
+  },
+
+  york: {
+    coords: [53.96246803529809, -1.0819419599841373],
+    icon: goldIcon,
+    title: "York Minster",
+    description: `
+    <p>1324 r.</p>
+    <ul>
+    <li>Decorated Style</li>
+      <li>Katedra była budowana w kilku etapach, podczas których normańska katedra, istniejąca wcześniej w tym miejscu, była stopniowo zastępowana przez obecną budowlę.</li>
+      <li>Do budowy użyto kamieni wapiennych, wydobywanych w pobliskim kamieniołomie w Tadcaster.</li>
+      <li>W katedrze znajduje się największy obecnie średniowieczny zabytek ze szkła w Anglii – Wielkie Wschodnie Okno.</li>
+      <li>Katedra ma 160 metrów długości i 76 metrów szerokości. Środkowa wieża ma 71 metrów wysokości, wieże zachodnie – 56 metrów</li>
+      <li>Katedra zbudowana jest na planie krzyża, z ośmiokątnym kapitularzem połączonym z północną częścią transeptu, z jedną centralną wieżą i 2 wieżami w zachodniej części.</li>
+    </ul>
+  `,
+    photos: ["assets/7 (1).jpg"],
+    plans: [""]
+  },
+
+  wells: {
+    coords: [51.210595438015716, -2.6434732754536645],
+    icon: goldIcon,
+    title: "Katedra w Wells",
+    description: `
+    <p>korpus XIII wiek; fasada 1239; skrzyżowanie - 1338</p>
+    <ul>
+    <li>Decorated Style</li>
+      <li>Budowa obecnego kościoła została rozpoczęta od wschodniego szczytu, w 1176 roku, i kontynuowano ją po konsekracji w 1239 roku, ale w latach 1190-1206 prace zostały przerwane. </li>
+      <li>Kaplica Najświętszej Maryi Panny (Lady Chapel) została rozpoczęta w 1323 roku i ukończona około 1326 roku. Zaprojektowana zapewne przez Thomasa Witneya. W tym czasie kaplica była budowlą wolnostojącą, znajdującą się na wschód od pierwotnego szczytu wschodniego. Prezbiterium zostało rozbudowane w 1330 roku, aby połączyć nową kaplicę Najświętszej Maryi Panny. </li>
+      <li>W 1337 roku, po stwierdzeniu osiadania podłoża i pęknieć pod nową wieżą, zbudowano wielkie łuki i wykonano inne prace, aby uchronić katedrę przed zawaleniem. Łuki zostały zaprojektowane przez Williama Joya (znane są jako łuki sitowe).</li>
+    </ul>
+  `,
+    photos: ["assets/8 (1).jpg"],
+    plans: [""]
+  },
+
+  lincoln: {
+    coords: [53.2344316273749, -0.5360048735107016],
+    icon: goldIcon,
+    title: "Katedra w Lincoln",
+    description: `
+    <p>1192 rozpoczęcie; 1215 – 1235 – nawa gówna; 1233 – sklepienie n. głównej
+</p>
+    <ul>
+    <li>Early English (Chór Anielski - decorated style)</li>
+      <li>Od 1311 roku przez 238 lat katedra ta była najwyższą budowlą na świecie. Jej wysokość wynosiła 160 m.  W 1549 r. środkowa wieża kościoła z iglicą została zniszczona podczas silnej burzy.</li>
+      <li>Katedra ma charakterystyczny dla gotyku angielskiego układ, w którym długi korpus główny przecinają dwa transepty, z centralnie umieszczoną czworoboczną wieżą. Zachodnia fasada jest szeroka, a w jej centrum widnieją romańskie portale otoczone rzędami gotyckich ślepych arkad. Całość łączą dwie bliźniacze, czworoboczne wieże.</li>
+      <li>Główną oś wnętrza zaznacza, umieszczone w sklepieniu, długie żebro szczytowe z odchodzącymi od niego wachlarzami bocznych łuków. W ramionach zachodniego transeptu znajdują się witrażowe rozety o misternych maswerkach. Dalej na wschód znajduje się chór, mieszczący stale z wyraźnie większym tronem biskupim. Chór jest otoczony przegrodą dekorowaną ślepymi arkadami. W tej części sanktuarium sklepienie ma niespotykany gdzie indziej układ przesuniętych żeber, nazywany szalonym sklepieniem. Za prezbiterium znajduje się kaplica z grobowcami i witrażami w oknach.</li>
+      
+      
+    </ul>
+  `,
+    photos: ["assets/13.jpg", "assets/Lincoln-fasada.jpg"],
+    plans: [""]
+  },
+
+  gloucester: {
+    coords: [51.86742171982948, -2.2468185061103534],
+    icon: goldIcon,
+    title: "Katedra w Gloucester",
+    description: `
+    <p>1084 – 1218 – I faza;
+1370 – 1412 – II faza</p>
+    <ul>
+    <li>Early English/Perpendicular Style (połączenie architektury normańskiej i angielskiej, gotyckiej)</li>
+      <li>Konstrukcja katedry jest trójnawowa z transeptem z obejściem chóru i wieńcem kaplic.</li>
+      <li>W katedrze znajduje się sarkofag Roberta II Krótkoudego, księcia Normandii, który zmarł w 1134.</li>
+      <li>Krużganki w Gloucester są najwcześniejszymi zachowanymi sklepieniami wachlarzowymi w Anglii, zaprojektowanymi w latach 1351–1377 przez Thomasa de Cantebrugge.</li>
+      
+      
+    </ul>
+  `,
+    photos: ["assets/The_Cloisters_at_Gloucester_Cathedral.jpg"],
+    plans: [""]
+  },
 };
 
 Object.keys(placesData).forEach(placeKey => {
